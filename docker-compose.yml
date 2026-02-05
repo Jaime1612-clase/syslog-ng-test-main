@@ -1,0 +1,100 @@
+services:
+  syslog-server:
+    image: balabit/syslog-ng:latest
+    container_name: syslog-server
+    hostname: syslog-server
+    ports:
+      - "514:514/tcp"
+    volumes:
+      - ./logs/server:/var/log/syslog-ng
+      - ./server/syslog-ng.conf:/etc/syslog-ng/syslog-ng.conf
+    networks:
+      - socnet
+
+  syslog-client:
+    image: balabit/syslog-ng:latest
+    container_name: syslog-client
+    hostname: syslog-client
+    depends_on:
+      - syslog-server
+    volumes:
+      - ./client/syslog-ng.conf:/etc/syslog-ng/syslog-ng.conf
+    networks:
+      - socnet
+  # ==========================================
+  # SIEM - WAZUH
+ 
+  
+  # 1. Base de datos (OpenSearch/Elasticsearch)
+  wazuh-indexer:
+    image: wazuh/wazuh-indexer:4.7.2
+    container_name: wazuh-indexer
+    hostname: wazuh-indexer
+    ports:
+      - "9200:9200"
+    environment:
+      - "OPENSEARCH_JAVA_OPTS=-Xms1g -Xmx1g"
+      - "discovery.type=single-node"
+      - "network.host=0.0.0.0"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    volumes:
+      - wazuh-indexer-data:/var/lib/wazuh-indexer
+    networks:
+      - socnet
+
+  # 2. Manager - Cerebro del SIEM
+  wazuh-manager:
+    image: wazuh/wazuh-manager:4.7.2
+    container_name: wazuh-manager
+    hostname: wazuh-manager
+    ports:
+      - "1514:1514"    # Recibe logs de agentes
+      - "1515:1515"    # Registro de agentes
+      - "55000:55000"  # API REST
+    environment:
+      - INDEXER_URL=https://wazuh-indexer:9200
+      - INDEXER_USERNAME=admin
+      - INDEXER_PASSWORD=admin
+      - FILEBEAT_SSL_VERIFICATION_MODE=none
+    volumes:
+      - wazuh-manager-data:/var/ossec/data
+      - wazuh-manager-logs:/var/ossec/logs
+      - ./logs/server:/external-logs:ro
+    depends_on:
+      - wazuh-indexer
+    networks:
+      - socnet
+
+  # 3. Dashboard - Interfaz Web
+  wazuh-dashboard:
+    image: wazuh/wazuh-dashboard:4.7.2
+    container_name: wazuh-dashboard
+    hostname: wazuh-dashboard
+    ports:
+      - "5601:5601"  # Acceso web
+    environment:
+      - INDEXER_USERNAME=admin
+      - INDEXER_PASSWORD=admin
+      - WAZUH_API_URL=https://wazuh-manager
+      - API_USERNAME=wazuh-wui
+      - API_PASSWORD=MyS3cr37P450r.*-
+    depends_on:
+      - wazuh-indexer
+      - wazuh-manager
+    networks:
+      - socnet
+
+networks:
+  socnet:
+    driver: bridge
+
+volumes:
+  wazuh-indexer-data:
+  wazuh-manager-data:
+  wazuh-manager-logs:
