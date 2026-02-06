@@ -1,0 +1,104 @@
+version: '3.8'
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.1
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+      - xpack.security.enabled=false
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+    networks:
+      - socnet
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:8.11.1
+    container_name: logstash
+    environment:
+      - LS_JAVA_OPTS=-Xms512m -Xmx512m
+    volumes:
+      - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+    ports:
+      - "5044:5044" # Beats input
+      - "5000:5000" # TCP/UDP input
+    depends_on:
+      - elasticsearch
+    networks:
+      - socnet
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.11.1
+    container_name: kibana
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    networks:
+      - socnet
+
+  filebeat:
+    build: ./filebeat
+    container_name: filebeat
+    user: root
+    volumes:
+      - ./logs/server:/var/log/syslog-ng:ro
+    depends_on:
+      - logstash
+    networks:
+      - socnet
+# 4. thehive: Plataforma de gestión de incidentes (ticketing), permite documentar, clasificar y hacer seguimiento de casos.
+# Login:  admin Password:secret
+  thehive:
+    image: strangebee/thehive:5.1
+    container_name: thehive
+    ports:
+      - "9000:9000"
+    volumes:
+      - thehive_data:/opt/thehive/data
+    networks:
+      - socnet
+
+# 5. syslog-server: Recibe logs de red vía syslog y los almacena para pruebas y simulación.
+  syslog-server:
+    image: balabit/syslog-ng:latest
+    container_name: syslog-server
+    hostname: syslog-server
+    ports:
+      - "514:514/tcp"
+    volumes:
+      - ./logs/server:/var/log/syslog-ng
+      - ./server/syslog-ng.conf:/etc/syslog-ng/syslog-ng.conf
+    networks:
+      - socnet
+
+# 6. syslog-client: Simula un endpoint enviando logs al syslog-server.
+  syslog-client:
+    image: balabit/syslog-ng:latest
+    container_name: syslog-client
+    hostname: syslog-client
+    depends_on:
+      - syslog-server
+    volumes:
+      - ./client/syslog-ng.conf:/etc/syslog-ng/syslog-ng.conf
+    networks:
+      - socnet
+
+networks:
+  socnet:
+    driver: bridge
+
+volumes:
+  esdata:
+  thehive_data:
