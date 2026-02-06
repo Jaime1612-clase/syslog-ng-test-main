@@ -1,0 +1,21 @@
+feb. 06 18:34:17 syslog-client sshd[1234]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+feb. 06 18:34:18 syslog-client sshd[1234]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+feb. 06 18:34:18 syslog-client sshd[1234]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+feb. 06 18:34:19 syslog-client sshd[1234]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+feb. 06 18:34:19 syslog-client sshd[1234]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+feb. 06 18:34:20 syslog-client kernel: [UFW BLOCK] IN=eth0 OUT= MAC=... SRC=10.0.0.5 DST=10.0.0.10 ...
+feb. 06 18:34:20 syslog-client sshd[1234]: Accepted password for user1 from 192.168.1.101 port 22 ssh2
+feb. 06 23:41:04 syslog-client sshd[1234]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+feb. 06 23:41:04 syslog-client sshd[1234]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+feb. 06 23:41:05 syslog-client sshd[1234]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+feb. 06 23:41:05 syslog-client sshd[1234]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+feb. 06 23:41:06 syslog-client sshd[1234]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+feb. 06 23:41:06 syslog-client kernel: [UFW BLOCK] IN=eth0 OUT= MAC=... SRC=10.0.0.5 DST=10.0.0.10 ...
+feb. 06 23:41:06 syslog-client sshd[1234]: Accepted password for user1 from 192.168.1.101 port 22 ssh2
+feb. 07 00:09:40 syslog-client sshd[1234]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+feb. 07 00:09:41 syslog-client sshd[1234]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+feb. 07 00:09:41 syslog-client sshd[1234]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+feb. 07 00:09:42 syslog-client sshd[1234]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+feb. 07 00:09:42 syslog-client sshd[1234]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+feb. 07 00:09:43 syslog-client kernel: [UFW BLOCK] IN=eth0 OUT= MAC=... SRC=10.0.0.5 DST=10.0.0.10 ...
+feb. 07 00:09:43 syslog-client sshd[1234]: Accepted password for user1 from 192.168.1.101 port 22 ssh2

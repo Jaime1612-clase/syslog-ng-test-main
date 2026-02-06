@@ -2,7 +2,7 @@ import requests
 
 # Configuración
 thehive_url = "http://localhost:9000/api/alert"
-api_key = "OEm0iYARpGATXPZ9koZFzSfEPsLnQCZu"  # Reemplaza por tu clave real
+api_key = "ept5rd2DyjgWqIts08itHju1WaKpkkrb"  # Reemplaza por tu clave real
 
 headers = {
     "Authorization": f"Bearer {api_key}",

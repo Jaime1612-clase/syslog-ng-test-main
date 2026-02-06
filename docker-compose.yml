@@ -1,5 +1,6 @@
 version: '3.8'
 services:
+  # 1. Servicio Elasticsearch: Motor de búsqueda y almacenamiento de datos. Usado para indexar y consultar logs.
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.11.1
     container_name: elasticsearch
@@ -21,6 +22,7 @@ services:
     networks:
       - socnet
 
+  # 2. Servicio Logstash: Procesa, transforma y envía logs a Elasticsearch. Recibe datos de Filebeat y otros inputs.
   logstash:
     image: docker.elastic.co/logstash/logstash:8.11.1
     container_name: logstash
@@ -36,18 +38,21 @@ services:
     networks:
       - socnet
 
+  # 3. Servicio Kibana: Interfaz web para visualizar y analizar datos almacenados en Elasticsearch.
   kibana:
     image: docker.elastic.co/kibana/kibana:8.11.1
     container_name: kibana
     environment:
       - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
     ports:
-      - "5601:5601"
+      - "5602:5601"
     depends_on:
       - elasticsearch
     networks:
       - socnet
 
+
+  # 4. Servicio Filebeat: Recoge logs de archivos y los envía a Logstash para su procesamiento.
   filebeat:
     build: ./filebeat
     container_name: filebeat
@@ -58,8 +63,9 @@ services:
       - logstash
     networks:
       - socnet
-# 4. thehive: Plataforma de gestión de incidentes (ticketing), permite documentar, clasificar y hacer seguimiento de casos.
+# 5. thehive: Plataforma de gestión de incidentes (ticketing), permite documentar, clasificar y hacer seguimiento de casos.
 # Login:  admin Password:secret
+
   thehive:
     image: strangebee/thehive:5.1
     container_name: thehive
@@ -70,7 +76,8 @@ services:
     networks:
       - socnet
 
-# 5. syslog-server: Recibe logs de red vía syslog y los almacena para pruebas y simulación.
+# 6. syslog-server: Recibe logs de red vía syslog y los almacena para pruebas y simulación.
+
   syslog-server:
     image: balabit/syslog-ng:latest
     container_name: syslog-server
@@ -83,7 +90,8 @@ services:
     networks:
       - socnet
 
-# 6. syslog-client: Simula un endpoint enviando logs al syslog-server.
+# 7. syslog-client: Simula un endpoint enviando logs al syslog-server.
+ 
   syslog-client:
     image: balabit/syslog-ng:latest
     container_name: syslog-client
