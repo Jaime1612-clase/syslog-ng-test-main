@@ -1,6 +1,5 @@
 version: '3.8'
 services:
-  # 1. Servicio Elasticsearch: Motor de búsqueda y almacenamiento de datos. Usado para indexar y consultar logs.
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.11.1
     container_name: elasticsearch
@@ -21,8 +20,11 @@ services:
       - "9200:9200"
     networks:
       - socnet
+    healthcheck:
+      test: ["CMD-SHELL", "curl -s http://localhost:9200 || exit 1"]
+      interval: 10s
+      retries: 10
 
-  # 2. Servicio Logstash: Procesa, transforma y envía logs a Elasticsearch. Recibe datos de Filebeat y otros inputs.
   logstash:
     image: docker.elastic.co/logstash/logstash:8.11.1
     container_name: logstash
@@ -31,14 +33,15 @@ services:
     volumes:
       - ./pipeline:/usr/share/logstash/pipeline
     ports:
-      - "5044:5044" # Beats input
-      - "5000:5000" # TCP/UDP input
+      - "5044:5044"
+      - "5000:5000"
     depends_on:
-      - elasticsearch
+      elasticsearch:
+        condition: service_healthy
     networks:
       - socnet
+    restart: always
 
-  # 3. Servicio Kibana: Interfaz web para visualizar y analizar datos almacenados en Elasticsearch.
   kibana:
     image: docker.elastic.co/kibana/kibana:8.11.1
     container_name: kibana
@@ -53,8 +56,6 @@ services:
     networks:
       - socnet
 
-
-  # 4. Servicio Filebeat: Recoge logs de archivos y los envía a Logstash para su procesamiento.
   filebeat:
     build: ./filebeat
     container_name: filebeat
@@ -65,8 +66,6 @@ services:
       - logstash
     networks:
       - socnet
-# 5. thehive: Plataforma de gestión de incidentes (ticketing), permite documentar, clasificar y hacer seguimiento de casos.
-# Login:  admin Password:secret
 
   thehive:
     image: strangebee/thehive:5.1
@@ -77,8 +76,6 @@ services:
       - thehive_data:/opt/thehive/data
     networks:
       - socnet
-
-# 6. syslog-server: Recibe logs de red vía syslog y los almacena para pruebas y simulación.
 
   syslog-server:
     image: balabit/syslog-ng:latest
@@ -92,8 +89,6 @@ services:
     networks:
       - socnet
 
-# 7. syslog-client: Simula un endpoint enviando logs al syslog-server.
- 
   syslog-client:
     image: balabit/syslog-ng:latest
     container_name: syslog-client
@@ -111,6 +106,5 @@ networks:
 
 volumes:
   esdata:
-  es_snapshots:
-  thehive_data:
   kibana_data:
+  thehive_data:
