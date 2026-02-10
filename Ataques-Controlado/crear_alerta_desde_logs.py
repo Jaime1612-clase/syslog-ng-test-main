@@ -8,13 +8,14 @@ import requests
 import json
 import re
 import sys
+import os
 from datetime import datetime
 from pathlib import Path
 from collections import defaultdict
 
 # Configuración
 THEHIVE_URL = "http://localhost:9000/api/alert"
-API_KEY = "dIVmJS4fK9m7QxJdygdf6RpVhH2hxRa5"
+API_KEY = os.environ.get('THEHIVE_API_KEY', "hZo3qYekLTwks35KUJAHkfsw9CL6GPW0")
 
 HEADERS = {
     "Authorization": f"Bearer {API_KEY}",

@@ -29,7 +29,7 @@ services:
     environment:
       - LS_JAVA_OPTS=-Xms512m -Xmx512m
     volumes:
-      - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+      - ./pipeline:/usr/share/logstash/pipeline
     ports:
       - "5044:5044" # Beats input
       - "5000:5000" # TCP/UDP input
@@ -46,6 +46,8 @@ services:
       - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
     ports:
       - "5602:5601"
+    volumes:
+      - kibana_data:/usr/share/kibana/data
     depends_on:
       - elasticsearch
     networks:
@@ -109,4 +111,6 @@ networks:
 
 volumes:
   esdata:
+  es_snapshots:
   thehive_data:
+  kibana_data:

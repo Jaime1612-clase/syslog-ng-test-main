@@ -6,7 +6,7 @@ import time
 ELASTICSEARCH_HOST = "localhost"
 ELASTICSEARCH_PORT = 9200
 THEHIVE_URL = "http://localhost:9000/api/alert"
-THEHIVE_API_KEY = "ept5rd2DyjgWqIts08itHju1WaKpkkrb"  # Reemplaza por tu clave real
+THEHIVE_API_KEY = "hZo3qYekLTwks35KUJAHkfsw9CL6GPW0"  # Reemplaza por tu clave real
 
 # Inicializar Elasticsearch
 es = Elasticsearch([{'host': ELASTICSEARCH_HOST, 'port': ELASTICSEARCH_PORT, 'scheme': 'http'}])
