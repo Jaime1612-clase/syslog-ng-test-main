@@ -7,6 +7,7 @@ services:
       - discovery.type=single-node
       - ES_JAVA_OPTS=-Xms1g -Xmx1g
       - xpack.security.enabled=false
+      - xpack.watcher.enabled=true
     ulimits:
       memlock:
         soft: -1
@@ -47,10 +48,11 @@ services:
     container_name: kibana
     environment:
       - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    volumes:
+      - ./kibana.yml:/usr/share/kibana/config/kibana.yml
+      - kibana_data:/usr/share/kibana/data
     ports:
       - "5602:5601"
-    volumes:
-      - kibana_data:/usr/share/kibana/data
     depends_on:
       - elasticsearch
     networks:
