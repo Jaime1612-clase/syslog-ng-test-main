@@ -1,0 +1,1288 @@
+[
+  {
+    "timestamp": "2026-02-10T20:36:00.957277",
+    "title": "[ALERT] SSH Brute Force - 319 intentos desde 3 IPs",
+    "description": "Se detectaron 319 intentos fallidos de SSH en los ultimos 10 min. IPs: 198.51.100.10, 192.168.1.100, 10.0.0.5",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "198.51.100.10",
+      "192.168.1.100",
+      "10.0.0.5"
+    ],
+    "total_events": 319,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:36:00.977319",
+    "title": "[ALERT] Port Scanning - 415 eventos desde 3 IPs",
+    "description": "Se detectaron 415 intentos de escaneo de puertos (UFW BLOCK). IPs: 203.0.113.45, 198.51.100.10, 172.16.0.50",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "172.16.0.50"
+    ],
+    "total_events": 415,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:36:01.004189",
+    "title": "[ALERT] SQL Injection - 242 intentos desde 3 IPs",
+    "description": "Se detectaron 242 intentos de SQL Injection. IPs: 203.0.113.45, 172.16.0.50, 192.168.1.100",
+    "severity": 3,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 242,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:36:01.034904",
+    "title": "[ALERT] Web Attacks - 337 solicitudes HTTP sospechosas desde 3 IPs",
+    "description": "Se detectaron 337 solicitudes HTTP con status code 403/401/404. IPs: 203.0.113.45, 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 337,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:36:01.064966",
+    "title": "[CRITICAL] Privilege Escalation - 2 intentos detectados",
+    "description": "Se detectaron 2 intentos de escalada de privilegios. IPs: 198.51.100.10, 192.168.1.100",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 2,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:36:01.117156",
+    "title": "[CRITICAL] MALWARE DETECTION - 270 eventos criticos",
+    "description": "Se han detectado 270 eventos de malware. IPs: 10.0.0.5, 192.168.1.100, 203.0.113.45, 172.16.0.50, 198.51.100.10, 192.168.1.50",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "10.0.0.5",
+      "192.168.1.100",
+      "203.0.113.45",
+      "172.16.0.50",
+      "198.51.100.10"
+    ],
+    "total_events": 270,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:36:01.140649",
+    "title": "[CRITICAL] Data Exfiltration - 183 transferencias sospechosas hacia 3 IPs",
+    "description": "Se detectaron 183 transferencias sospechosas. IPs destino: 203.0.113.45, 10.0.0.5, 172.16.0.50",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "10.0.0.5",
+      "172.16.0.50"
+    ],
+    "total_events": 183,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:36:31.206139",
+    "title": "[ALERT] SSH Brute Force - 319 intentos desde 3 IPs",
+    "description": "Se detectaron 319 intentos fallidos de SSH en los ultimos 10 min. IPs: 198.51.100.10, 192.168.1.100, 10.0.0.5",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "198.51.100.10",
+      "192.168.1.100",
+      "10.0.0.5"
+    ],
+    "total_events": 319,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:36:31.229567",
+    "title": "[ALERT] Port Scanning - 415 eventos desde 3 IPs",
+    "description": "Se detectaron 415 intentos de escaneo de puertos (UFW BLOCK). IPs: 203.0.113.45, 198.51.100.10, 172.16.0.50",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "172.16.0.50"
+    ],
+    "total_events": 415,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:36:31.270596",
+    "title": "[ALERT] SQL Injection - 242 intentos desde 3 IPs",
+    "description": "Se detectaron 242 intentos de SQL Injection. IPs: 203.0.113.45, 172.16.0.50, 192.168.1.100",
+    "severity": 3,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 242,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:36:31.307012",
+    "title": "[ALERT] Web Attacks - 337 solicitudes HTTP sospechosas desde 3 IPs",
+    "description": "Se detectaron 337 solicitudes HTTP con status code 403/401/404. IPs: 203.0.113.45, 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 337,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:36:31.347952",
+    "title": "[CRITICAL] Privilege Escalation - 2 intentos detectados",
+    "description": "Se detectaron 2 intentos de escalada de privilegios. IPs: 198.51.100.10, 192.168.1.100",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 2,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:36:31.386137",
+    "title": "[CRITICAL] MALWARE DETECTION - 270 eventos criticos",
+    "description": "Se han detectado 270 eventos de malware. IPs: 10.0.0.5, 192.168.1.100, 203.0.113.45, 172.16.0.50, 198.51.100.10, 192.168.1.50",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "10.0.0.5",
+      "192.168.1.100",
+      "203.0.113.45",
+      "172.16.0.50",
+      "198.51.100.10"
+    ],
+    "total_events": 270,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:36:31.435005",
+    "title": "[CRITICAL] Data Exfiltration - 183 transferencias sospechosas hacia 3 IPs",
+    "description": "Se detectaron 183 transferencias sospechosas. IPs destino: 203.0.113.45, 10.0.0.5, 172.16.0.50",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "10.0.0.5",
+      "172.16.0.50"
+    ],
+    "total_events": 183,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:37:01.486496",
+    "title": "[ALERT] SSH Brute Force - 314 intentos desde 2 IPs",
+    "description": "Se detectaron 314 intentos fallidos de SSH en los ultimos 10 min. IPs: 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 314,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:37:01.603614",
+    "title": "[ALERT] Port Scanning - 415 eventos desde 3 IPs",
+    "description": "Se detectaron 415 intentos de escaneo de puertos (UFW BLOCK). IPs: 203.0.113.45, 198.51.100.10, 172.16.0.50",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "172.16.0.50"
+    ],
+    "total_events": 415,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:37:01.688902",
+    "title": "[ALERT] SQL Injection - 242 intentos desde 3 IPs",
+    "description": "Se detectaron 242 intentos de SQL Injection. IPs: 203.0.113.45, 172.16.0.50, 192.168.1.100",
+    "severity": 3,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 242,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:37:01.721435",
+    "title": "[ALERT] Web Attacks - 337 solicitudes HTTP sospechosas desde 3 IPs",
+    "description": "Se detectaron 337 solicitudes HTTP con status code 403/401/404. IPs: 203.0.113.45, 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 337,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:37:01.743921",
+    "title": "[CRITICAL] Privilege Escalation - 2 intentos detectados",
+    "description": "Se detectaron 2 intentos de escalada de privilegios. IPs: 198.51.100.10, 192.168.1.100",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 2,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:37:01.769731",
+    "title": "[CRITICAL] MALWARE DETECTION - 270 eventos criticos",
+    "description": "Se han detectado 270 eventos de malware. IPs: 10.0.0.5, 192.168.1.100, 203.0.113.45, 172.16.0.50, 198.51.100.10, 192.168.1.50",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "10.0.0.5",
+      "192.168.1.100",
+      "203.0.113.45",
+      "172.16.0.50",
+      "198.51.100.10"
+    ],
+    "total_events": 270,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:37:01.816965",
+    "title": "[CRITICAL] Data Exfiltration - 183 transferencias sospechosas hacia 3 IPs",
+    "description": "Se detectaron 183 transferencias sospechosas. IPs destino: 203.0.113.45, 10.0.0.5, 172.16.0.50",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "10.0.0.5",
+      "172.16.0.50"
+    ],
+    "total_events": 183,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:37:31.876225",
+    "title": "[ALERT] SSH Brute Force - 314 intentos desde 2 IPs",
+    "description": "Se detectaron 314 intentos fallidos de SSH en los ultimos 10 min. IPs: 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 314,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:37:31.905262",
+    "title": "[ALERT] Port Scanning - 415 eventos desde 3 IPs",
+    "description": "Se detectaron 415 intentos de escaneo de puertos (UFW BLOCK). IPs: 203.0.113.45, 198.51.100.10, 172.16.0.50",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "172.16.0.50"
+    ],
+    "total_events": 415,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:37:31.951229",
+    "title": "[ALERT] SQL Injection - 242 intentos desde 3 IPs",
+    "description": "Se detectaron 242 intentos de SQL Injection. IPs: 203.0.113.45, 172.16.0.50, 192.168.1.100",
+    "severity": 3,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 242,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:37:32.005087",
+    "title": "[ALERT] Web Attacks - 337 solicitudes HTTP sospechosas desde 3 IPs",
+    "description": "Se detectaron 337 solicitudes HTTP con status code 403/401/404. IPs: 203.0.113.45, 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 337,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:37:32.028058",
+    "title": "[CRITICAL] Privilege Escalation - 2 intentos detectados",
+    "description": "Se detectaron 2 intentos de escalada de privilegios. IPs: 198.51.100.10, 192.168.1.100",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 2,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:37:32.056089",
+    "title": "[CRITICAL] MALWARE DETECTION - 270 eventos criticos",
+    "description": "Se han detectado 270 eventos de malware. IPs: 10.0.0.5, 192.168.1.100, 203.0.113.45, 172.16.0.50, 198.51.100.10, 192.168.1.50",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "10.0.0.5",
+      "192.168.1.100",
+      "203.0.113.45",
+      "172.16.0.50",
+      "198.51.100.10"
+    ],
+    "total_events": 270,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:37:32.086293",
+    "title": "[CRITICAL] Data Exfiltration - 183 transferencias sospechosas hacia 3 IPs",
+    "description": "Se detectaron 183 transferencias sospechosas. IPs destino: 203.0.113.45, 10.0.0.5, 172.16.0.50",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "10.0.0.5",
+      "172.16.0.50"
+    ],
+    "total_events": 183,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:38:02.140484",
+    "title": "[ALERT] SSH Brute Force - 314 intentos desde 2 IPs",
+    "description": "Se detectaron 314 intentos fallidos de SSH en los ultimos 10 min. IPs: 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 314,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:38:02.159317",
+    "title": "[ALERT] Port Scanning - 415 eventos desde 3 IPs",
+    "description": "Se detectaron 415 intentos de escaneo de puertos (UFW BLOCK). IPs: 203.0.113.45, 198.51.100.10, 172.16.0.50",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "172.16.0.50"
+    ],
+    "total_events": 415,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:38:02.187857",
+    "title": "[ALERT] SQL Injection - 242 intentos desde 3 IPs",
+    "description": "Se detectaron 242 intentos de SQL Injection. IPs: 203.0.113.45, 172.16.0.50, 192.168.1.100",
+    "severity": 3,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 242,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:38:02.217888",
+    "title": "[ALERT] Web Attacks - 337 solicitudes HTTP sospechosas desde 3 IPs",
+    "description": "Se detectaron 337 solicitudes HTTP con status code 403/401/404. IPs: 203.0.113.45, 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 337,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:38:02.240309",
+    "title": "[CRITICAL] Privilege Escalation - 2 intentos detectados",
+    "description": "Se detectaron 2 intentos de escalada de privilegios. IPs: 198.51.100.10, 192.168.1.100",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 2,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:38:02.268413",
+    "title": "[CRITICAL] MALWARE DETECTION - 270 eventos criticos",
+    "description": "Se han detectado 270 eventos de malware. IPs: 10.0.0.5, 192.168.1.100, 203.0.113.45, 172.16.0.50, 198.51.100.10, 192.168.1.50",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "10.0.0.5",
+      "192.168.1.100",
+      "203.0.113.45",
+      "172.16.0.50",
+      "198.51.100.10"
+    ],
+    "total_events": 270,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:38:02.314963",
+    "title": "[CRITICAL] Data Exfiltration - 183 transferencias sospechosas hacia 3 IPs",
+    "description": "Se detectaron 183 transferencias sospechosas. IPs destino: 203.0.113.45, 10.0.0.5, 172.16.0.50",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "10.0.0.5",
+      "172.16.0.50"
+    ],
+    "total_events": 183,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:38:32.388405",
+    "title": "[ALERT] SSH Brute Force - 314 intentos desde 2 IPs",
+    "description": "Se detectaron 314 intentos fallidos de SSH en los ultimos 10 min. IPs: 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 314,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:38:32.408876",
+    "title": "[ALERT] Port Scanning - 415 eventos desde 3 IPs",
+    "description": "Se detectaron 415 intentos de escaneo de puertos (UFW BLOCK). IPs: 203.0.113.45, 198.51.100.10, 172.16.0.50",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "172.16.0.50"
+    ],
+    "total_events": 415,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:38:32.436565",
+    "title": "[ALERT] SQL Injection - 242 intentos desde 3 IPs",
+    "description": "Se detectaron 242 intentos de SQL Injection. IPs: 203.0.113.45, 172.16.0.50, 192.168.1.100",
+    "severity": 3,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 242,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:38:32.467597",
+    "title": "[ALERT] Web Attacks - 337 solicitudes HTTP sospechosas desde 3 IPs",
+    "description": "Se detectaron 337 solicitudes HTTP con status code 403/401/404. IPs: 203.0.113.45, 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 337,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:38:32.489623",
+    "title": "[CRITICAL] Privilege Escalation - 2 intentos detectados",
+    "description": "Se detectaron 2 intentos de escalada de privilegios. IPs: 198.51.100.10, 192.168.1.100",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 2,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:38:32.530534",
+    "title": "[CRITICAL] MALWARE DETECTION - 270 eventos criticos",
+    "description": "Se han detectado 270 eventos de malware. IPs: 10.0.0.5, 192.168.1.100, 203.0.113.45, 172.16.0.50, 198.51.100.10, 192.168.1.50",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "10.0.0.5",
+      "192.168.1.100",
+      "203.0.113.45",
+      "172.16.0.50",
+      "198.51.100.10"
+    ],
+    "total_events": 270,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:38:32.585241",
+    "title": "[CRITICAL] Data Exfiltration - 183 transferencias sospechosas hacia 3 IPs",
+    "description": "Se detectaron 183 transferencias sospechosas. IPs destino: 203.0.113.45, 10.0.0.5, 172.16.0.50",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "10.0.0.5",
+      "172.16.0.50"
+    ],
+    "total_events": 183,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:38:44.900065",
+    "title": "[ALERT] SSH Brute Force - 331 intentos desde 3 IPs",
+    "description": "Se detectaron 331 intentos fallidos de SSH en los ultimos 10 min. IPs: 203.0.113.45, 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 331,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:38:44.922201",
+    "title": "[ALERT] Port Scanning - 433 eventos desde 3 IPs",
+    "description": "Se detectaron 433 intentos de escaneo de puertos (UFW BLOCK). IPs: 203.0.113.45, 172.16.0.50, 198.51.100.10",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "172.16.0.50",
+      "198.51.100.10"
+    ],
+    "total_events": 433,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:38:44.952153",
+    "title": "[ALERT] SQL Injection - 251 intentos desde 3 IPs",
+    "description": "Se detectaron 251 intentos de SQL Injection. IPs: 203.0.113.45, 172.16.0.50, 192.168.1.100",
+    "severity": 3,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 251,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:38:45.007703",
+    "title": "[ALERT] Web Attacks - 352 solicitudes HTTP sospechosas desde 4 IPs",
+    "description": "Se detectaron 352 solicitudes HTTP con status code 403/401/404. IPs: 203.0.113.45, 10.0.0.5, 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "10.0.0.5",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 352,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:38:45.033860",
+    "title": "[CRITICAL] Privilege Escalation - 3 intentos detectados",
+    "description": "Se detectaron 3 intentos de escalada de privilegios. IPs: 172.16.0.50, 198.51.100.10, 192.168.1.100",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "172.16.0.50",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 3,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:38:45.067924",
+    "title": "[CRITICAL] MALWARE DETECTION - 287 eventos criticos",
+    "description": "Se han detectado 287 eventos de malware. IPs: 203.0.113.45, 10.0.0.5, 192.168.1.50, 198.51.100.10, 192.168.1.100, 172.16.0.50",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "10.0.0.5",
+      "192.168.1.50",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 287,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:38:45.132331",
+    "title": "[CRITICAL] Data Exfiltration - 192 transferencias sospechosas hacia 4 IPs",
+    "description": "Se detectaron 192 transferencias sospechosas. IPs destino: 203.0.113.45, 10.0.0.5, 172.16.0.50, 192.168.1.100",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "10.0.0.5",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 192,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:39:02.699234",
+    "title": "[ALERT] SSH Brute Force - 331 intentos desde 3 IPs",
+    "description": "Se detectaron 331 intentos fallidos de SSH en los ultimos 10 min. IPs: 203.0.113.45, 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 331,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:39:02.749739",
+    "title": "[ALERT] Port Scanning - 433 eventos desde 3 IPs",
+    "description": "Se detectaron 433 intentos de escaneo de puertos (UFW BLOCK). IPs: 203.0.113.45, 198.51.100.10, 172.16.0.50",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "172.16.0.50"
+    ],
+    "total_events": 433,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:39:02.807809",
+    "title": "[ALERT] SQL Injection - 251 intentos desde 3 IPs",
+    "description": "Se detectaron 251 intentos de SQL Injection. IPs: 203.0.113.45, 172.16.0.50, 192.168.1.100",
+    "severity": 3,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 251,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:39:02.878980",
+    "title": "[ALERT] Web Attacks - 352 solicitudes HTTP sospechosas desde 4 IPs",
+    "description": "Se detectaron 352 solicitudes HTTP con status code 403/401/404. IPs: 203.0.113.45, 10.0.0.5, 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "10.0.0.5",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 352,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:39:02.935014",
+    "title": "[CRITICAL] Privilege Escalation - 3 intentos detectados",
+    "description": "Se detectaron 3 intentos de escalada de privilegios. IPs: 198.51.100.10, 172.16.0.50, 192.168.1.100",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "198.51.100.10",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 3,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:39:02.992685",
+    "title": "[CRITICAL] MALWARE DETECTION - 287 eventos criticos",
+    "description": "Se han detectado 287 eventos de malware. IPs: 10.0.0.5, 192.168.1.100, 203.0.113.45, 172.16.0.50, 198.51.100.10, 192.168.1.50",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "10.0.0.5",
+      "192.168.1.100",
+      "203.0.113.45",
+      "172.16.0.50",
+      "198.51.100.10"
+    ],
+    "total_events": 287,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:39:03.041731",
+    "title": "[CRITICAL] Data Exfiltration - 192 transferencias sospechosas hacia 4 IPs",
+    "description": "Se detectaron 192 transferencias sospechosas. IPs destino: 203.0.113.45, 10.0.0.5, 172.16.0.50, 192.168.1.100",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "10.0.0.5",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 192,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:39:15.207010",
+    "title": "[ALERT] SSH Brute Force - 331 intentos desde 3 IPs",
+    "description": "Se detectaron 331 intentos fallidos de SSH en los ultimos 10 min. IPs: 203.0.113.45, 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 331,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:39:15.228501",
+    "title": "[ALERT] Port Scanning - 433 eventos desde 3 IPs",
+    "description": "Se detectaron 433 intentos de escaneo de puertos (UFW BLOCK). IPs: 203.0.113.45, 172.16.0.50, 198.51.100.10",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "172.16.0.50",
+      "198.51.100.10"
+    ],
+    "total_events": 433,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:39:15.263734",
+    "title": "[ALERT] SQL Injection - 251 intentos desde 3 IPs",
+    "description": "Se detectaron 251 intentos de SQL Injection. IPs: 203.0.113.45, 172.16.0.50, 192.168.1.100",
+    "severity": 3,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 251,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:39:15.317550",
+    "title": "[ALERT] Web Attacks - 352 solicitudes HTTP sospechosas desde 4 IPs",
+    "description": "Se detectaron 352 solicitudes HTTP con status code 403/401/404. IPs: 203.0.113.45, 10.0.0.5, 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "10.0.0.5",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 352,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:39:15.339002",
+    "title": "[CRITICAL] Privilege Escalation - 3 intentos detectados",
+    "description": "Se detectaron 3 intentos de escalada de privilegios. IPs: 172.16.0.50, 198.51.100.10, 192.168.1.100",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "172.16.0.50",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 3,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:39:15.365840",
+    "title": "[CRITICAL] MALWARE DETECTION - 287 eventos criticos",
+    "description": "Se han detectado 287 eventos de malware. IPs: 203.0.113.45, 10.0.0.5, 192.168.1.50, 198.51.100.10, 192.168.1.100, 172.16.0.50",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "10.0.0.5",
+      "192.168.1.50",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 287,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:39:15.399465",
+    "title": "[CRITICAL] Data Exfiltration - 192 transferencias sospechosas hacia 4 IPs",
+    "description": "Se detectaron 192 transferencias sospechosas. IPs destino: 203.0.113.45, 10.0.0.5, 172.16.0.50, 192.168.1.100",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "10.0.0.5",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 192,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:39:33.140533",
+    "title": "[ALERT] SSH Brute Force - 331 intentos desde 3 IPs",
+    "description": "Se detectaron 331 intentos fallidos de SSH en los ultimos 10 min. IPs: 203.0.113.45, 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 331,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:39:33.173385",
+    "title": "[ALERT] Port Scanning - 433 eventos desde 3 IPs",
+    "description": "Se detectaron 433 intentos de escaneo de puertos (UFW BLOCK). IPs: 203.0.113.45, 198.51.100.10, 172.16.0.50",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "172.16.0.50"
+    ],
+    "total_events": 433,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:39:33.210144",
+    "title": "[ALERT] SQL Injection - 251 intentos desde 3 IPs",
+    "description": "Se detectaron 251 intentos de SQL Injection. IPs: 203.0.113.45, 172.16.0.50, 192.168.1.100",
+    "severity": 3,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 251,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:39:33.252069",
+    "title": "[ALERT] Web Attacks - 352 solicitudes HTTP sospechosas desde 4 IPs",
+    "description": "Se detectaron 352 solicitudes HTTP con status code 403/401/404. IPs: 203.0.113.45, 10.0.0.5, 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "10.0.0.5",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 352,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:39:33.277120",
+    "title": "[CRITICAL] Privilege Escalation - 3 intentos detectados",
+    "description": "Se detectaron 3 intentos de escalada de privilegios. IPs: 198.51.100.10, 172.16.0.50, 192.168.1.100",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "198.51.100.10",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 3,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:39:33.314306",
+    "title": "[CRITICAL] MALWARE DETECTION - 287 eventos criticos",
+    "description": "Se han detectado 287 eventos de malware. IPs: 10.0.0.5, 192.168.1.100, 203.0.113.45, 172.16.0.50, 198.51.100.10, 192.168.1.50",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "10.0.0.5",
+      "192.168.1.100",
+      "203.0.113.45",
+      "172.16.0.50",
+      "198.51.100.10"
+    ],
+    "total_events": 287,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:39:33.345953",
+    "title": "[CRITICAL] Data Exfiltration - 192 transferencias sospechosas hacia 4 IPs",
+    "description": "Se detectaron 192 transferencias sospechosas. IPs destino: 203.0.113.45, 10.0.0.5, 172.16.0.50, 192.168.1.100",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "10.0.0.5",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 192,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:40:03.410431",
+    "title": "[ALERT] SSH Brute Force - 331 intentos desde 3 IPs",
+    "description": "Se detectaron 331 intentos fallidos de SSH en los ultimos 10 min. IPs: 203.0.113.45, 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 331,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:40:03.435123",
+    "title": "[ALERT] Port Scanning - 433 eventos desde 3 IPs",
+    "description": "Se detectaron 433 intentos de escaneo de puertos (UFW BLOCK). IPs: 203.0.113.45, 198.51.100.10, 172.16.0.50",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "172.16.0.50"
+    ],
+    "total_events": 433,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:40:03.464384",
+    "title": "[ALERT] SQL Injection - 251 intentos desde 3 IPs",
+    "description": "Se detectaron 251 intentos de SQL Injection. IPs: 203.0.113.45, 172.16.0.50, 192.168.1.100",
+    "severity": 3,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 251,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:40:03.496833",
+    "title": "[ALERT] Web Attacks - 352 solicitudes HTTP sospechosas desde 4 IPs",
+    "description": "Se detectaron 352 solicitudes HTTP con status code 403/401/404. IPs: 203.0.113.45, 10.0.0.5, 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "10.0.0.5",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 352,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:40:03.541411",
+    "title": "[CRITICAL] Privilege Escalation - 3 intentos detectados",
+    "description": "Se detectaron 3 intentos de escalada de privilegios. IPs: 198.51.100.10, 172.16.0.50, 192.168.1.100",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "198.51.100.10",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 3,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:40:03.571967",
+    "title": "[CRITICAL] MALWARE DETECTION - 287 eventos criticos",
+    "description": "Se han detectado 287 eventos de malware. IPs: 10.0.0.5, 192.168.1.100, 203.0.113.45, 172.16.0.50, 198.51.100.10, 192.168.1.50",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "10.0.0.5",
+      "192.168.1.100",
+      "203.0.113.45",
+      "172.16.0.50",
+      "198.51.100.10"
+    ],
+    "total_events": 287,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:40:03.600621",
+    "title": "[CRITICAL] Data Exfiltration - 192 transferencias sospechosas hacia 4 IPs",
+    "description": "Se detectaron 192 transferencias sospechosas. IPs destino: 203.0.113.45, 10.0.0.5, 172.16.0.50, 192.168.1.100",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "10.0.0.5",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 192,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:40:33.658771",
+    "title": "[ALERT] SSH Brute Force - 331 intentos desde 3 IPs",
+    "description": "Se detectaron 331 intentos fallidos de SSH en los ultimos 10 min. IPs: 203.0.113.45, 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 331,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:40:33.678932",
+    "title": "[ALERT] Port Scanning - 433 eventos desde 3 IPs",
+    "description": "Se detectaron 433 intentos de escaneo de puertos (UFW BLOCK). IPs: 203.0.113.45, 198.51.100.10, 172.16.0.50",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "198.51.100.10",
+      "172.16.0.50"
+    ],
+    "total_events": 433,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:40:33.726871",
+    "title": "[ALERT] SQL Injection - 251 intentos desde 3 IPs",
+    "description": "Se detectaron 251 intentos de SQL Injection. IPs: 203.0.113.45, 172.16.0.50, 192.168.1.100",
+    "severity": 3,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 251,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:40:33.756834",
+    "title": "[ALERT] Web Attacks - 352 solicitudes HTTP sospechosas desde 4 IPs",
+    "description": "Se detectaron 352 solicitudes HTTP con status code 403/401/404. IPs: 203.0.113.45, 10.0.0.5, 198.51.100.10, 192.168.1.100",
+    "severity": 2,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "10.0.0.5",
+      "198.51.100.10",
+      "192.168.1.100"
+    ],
+    "total_events": 352,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:40:33.791553",
+    "title": "[CRITICAL] Privilege Escalation - 3 intentos detectados",
+    "description": "Se detectaron 3 intentos de escalada de privilegios. IPs: 198.51.100.10, 172.16.0.50, 192.168.1.100",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "198.51.100.10",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 3,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:40:33.817983",
+    "title": "[CRITICAL] MALWARE DETECTION - 287 eventos criticos",
+    "description": "Se han detectado 287 eventos de malware. IPs: 10.0.0.5, 192.168.1.100, 203.0.113.45, 172.16.0.50, 198.51.100.10, 192.168.1.50",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "10.0.0.5",
+      "192.168.1.100",
+      "203.0.113.45",
+      "172.16.0.50",
+      "198.51.100.10"
+    ],
+    "total_events": 287,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  },
+  {
+    "timestamp": "2026-02-10T20:40:33.844603",
+    "title": "[CRITICAL] Data Exfiltration - 192 transferencias sospechosas hacia 4 IPs",
+    "description": "Se detectaron 192 transferencias sospechosas. IPs destino: 203.0.113.45, 10.0.0.5, 172.16.0.50, 192.168.1.100",
+    "severity": 4,
+    "icon_type": "alert",
+    "ips_involved": [
+      "203.0.113.45",
+      "10.0.0.5",
+      "172.16.0.50",
+      "192.168.1.100"
+    ],
+    "total_events": 192,
+    "source": "Elasticsearch Monitor",
+    "status": "New"
+  }
+]
