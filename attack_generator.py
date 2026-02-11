@@ -80,8 +80,6 @@ def priv_esc():
         time.sleep(0.03)
     log_event(f"kernel: [PRIVESC] Buffer overflow from {ip} via {user}")
 
-if LOG_FILE.exists():
-    LOG_FILE.unlink()
 
 print("="*70)
 print("ATTACK GENERATOR - Generador de 50-100 Logs Reales de Ataque")

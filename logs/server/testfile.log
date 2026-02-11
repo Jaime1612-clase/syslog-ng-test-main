@@ -1,0 +1,2 @@
+Feb 11 20:23:00 syslog-client sshd[7777]: Failed password for testuser from 192.168.1.100 port 22 ssh2
+Feb 11 20:23:01 syslog-client sshd[7777]: Failed password for testuser from 192.168.1.100 port 22 ssh2

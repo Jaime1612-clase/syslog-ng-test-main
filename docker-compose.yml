@@ -1,4 +1,3 @@
-version: '3.8'
 services:
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.11.1
@@ -37,8 +36,9 @@ services:
       ports:
         - "5044:5044"
         - "5000:5000"
-        - "8080:8080"   
-
+        - "8080:8080"
+      networks:
+        - socnet
 
   kibana:
     image: docker.elastic.co/kibana/kibana:8.11.1
@@ -60,21 +60,35 @@ services:
     container_name: filebeat
     user: root
     volumes:
-      - ./logs/server:/var/log/syslog-ng:ro
+      - ./logs/server/syslog-client:/var/log/syslog-ng/syslog-client:rw
     depends_on:
       - logstash
     networks:
       - socnet
 
-  thehive:
-    image: strangebee/thehive:5.1
-    container_name: thehive
+  shuffle-frontend:
+    image: ghcr.io/shuffle/shuffle-frontend:nightly
+    container_name: shuffle-frontend
     ports:
-      - "9000:9000"
-    volumes:
-      - thehive_data:/opt/thehive/data
+      - "3001:80"
+    environment:
+      - BACKEND_HOSTNAME=localhost
     networks:
       - socnet
+    restart: always
+    depends_on:
+      - shuffle-backend
+
+  shuffle-backend:
+    image: ghcr.io/shuffle/shuffle-backend:nightly
+    container_name: shuffle-backend
+    ports:
+      - "5001:5001"
+    environment:
+      - SHUFFLE_OPENSEARCH_URL=http://elasticsearch:9200
+    networks:
+      - socnet
+    restart: always
 
   syslog-server:
     image: balabit/syslog-ng:latest
@@ -110,13 +124,39 @@ services:
     depends_on:
       elasticsearch:
         condition: service_healthy
-      thehive:
+      shuffle-backend:
         condition: service_started
     networks:
       - socnet
     restart: always
     
     
+  opensearch:
+    image: opensearchproject/opensearch:2.11.1
+    container_name: shuffle-opensearch
+    environment:
+      - OPENSEARCH_INITIAL_ADMIN_PASSWORD=admin
+      - bootstrap.memory_lock=true
+      - cluster.name=shuffle-cluster
+      - node.name=shuffle-opensearch
+      - node.store.allow_mmap=false
+      - DISABLE_PERFORMANCE_ANALYZER_AGENT_CLI=true
+      - cluster.routing.allocation.disk.threshold_enabled=false
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    volumes:
+      - shuffle-database:/usr/share/opensearch/data:z
+    ports:
+      - "9201:9200"
+    networks:
+      - socnet
+    restart: always
+
 networks:
   socnet:
     driver: bridge
@@ -124,4 +164,5 @@ networks:
 volumes:
   esdata:
   kibana_data:
-  thehive_data:
+  shuffle_data:
+  shuffle-database:
