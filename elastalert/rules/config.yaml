@@ -1,0 +1,23 @@
+name: Failed Login Alert
+type: frequency
+index: "syslog-*"
+num_events: 5
+timeframe:
+  minutes: 5
+filter:
+  - term:
+      syslog_program.keyword: "sshd"
+alert:
+  - hivealerter
+hive_connection:
+  hive_host: http://thehive
+  hive_port: 9000
+  hive_apikey: "HmKYBjymF9NUK3JTa/xQNG+JdbXf+s3w"
+hive_alert_config:
+  title: "Failed Login Alert"
+  description: "Multiple failed logins detected by sshd."
+  severity: 2
+  status: "New"
+  source: "ElastAlert2"
+  type: "login-failure"
+  tags: ["ssh", "failed-login"]

@@ -27,21 +27,18 @@ services:
       retries: 10
 
   logstash:
-    image: docker.elastic.co/logstash/logstash:8.11.1
-    container_name: logstash
-    environment:
-      - LS_JAVA_OPTS=-Xms512m -Xmx512m
-    volumes:
-      - ./pipeline:/usr/share/logstash/pipeline
-    ports:
-      - "5044:5044"
-      - "5000:5000"
-    depends_on:
-      elasticsearch:
-        condition: service_healthy
-    networks:
-      - socnet
-    restart: always
+      image: docker.elastic.co/logstash/logstash:8.11.1
+      container_name: logstash
+      hostname: logstash
+      environment:
+        - LS_JAVA_OPTS=-Xms512m -Xmx512m
+      volumes:
+        - ./pipeline:/usr/share/logstash/pipeline
+      ports:
+        - "5044:5044"
+        - "5000:5000"
+        - "8080:8080"   
+
 
   kibana:
     image: docker.elastic.co/kibana/kibana:8.11.1
@@ -102,6 +99,24 @@ services:
     networks:
       - socnet
 
+  elastalert:
+    build: ./elastalert
+    container_name: elastalert
+    environment:
+      - TZ=Europe/Madrid
+    volumes:
+      - ./elastalert/config:/opt/elastalert2/config
+      - ./elastalert/rules:/opt/elastalert2/rules
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+      thehive:
+        condition: service_started
+    networks:
+      - socnet
+    restart: always
+    
+    
 networks:
   socnet:
     driver: bridge

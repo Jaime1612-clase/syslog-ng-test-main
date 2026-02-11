@@ -6,4 +6,4 @@ filebeat.inputs:
       - /var/log/syslog-ng/**/*.log
 
 output.logstash:
-  hosts: ["logstash:5044"]
+  hosts: ["172.19.0.2:5044"]
