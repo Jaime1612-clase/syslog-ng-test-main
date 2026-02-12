@@ -72,7 +72,7 @@ services:
     ports:
       - "3001:80"
     environment:
-      - BACKEND_HOSTNAME=localhost
+      - BACKEND_HOSTNAME=shuffle-backend
     networks:
       - socnet
     restart: always
@@ -85,10 +85,12 @@ services:
     ports:
       - "5001:5001"
     environment:
-      - SHUFFLE_OPENSEARCH_URL=http://elasticsearch:9200
+      - SHUFFLE_OPENSEARCH_URL=http://shuffle-opensearch:9200
     networks:
       - socnet
     restart: always
+    depends_on:
+      - opensearch
 
   syslog-server:
     image: balabit/syslog-ng:latest
@@ -136,12 +138,14 @@ services:
     container_name: shuffle-opensearch
     environment:
       - OPENSEARCH_INITIAL_ADMIN_PASSWORD=admin
-      - bootstrap.memory_lock=true
+      - bootstrap.memory_lock=false
       - cluster.name=shuffle-cluster
       - node.name=shuffle-opensearch
       - node.store.allow_mmap=false
       - DISABLE_PERFORMANCE_ANALYZER_AGENT_CLI=true
       - cluster.routing.allocation.disk.threshold_enabled=false
+      - discovery.type=single-node
+      - plugins.security.disabled=true
     ulimits:
       memlock:
         soft: -1

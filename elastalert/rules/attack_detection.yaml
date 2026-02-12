@@ -1,0 +1,42 @@
+name: Multi-Attack Detection
+type: frequency
+index: "filebeat-*"
+
+# Detectar al menos 5 eventos sospechosos en 5 minutos
+num_events: 5
+timeframe:
+  minutes: 5
+
+# Buscar eventos de ataque en cualquier campo
+filter:
+  - bool:
+      should:
+        # SSH Brute Force
+        - query_string:
+            query: "sshd AND \"Failed password\""
+        # Port Scan
+        - query_string:
+            query: "UFW BLOCK"
+        # SQL Injection
+        - query_string:
+            query: "SQL INJECTION"
+        # Web Attacks
+        - query_string:
+            query: "httpd AND (403 OR 401 OR 404)"
+        # Malware Detection
+        - query_string:
+            query: "ClamAV AND MALWARE"
+        # Data Exfiltration
+        - query_string:
+            query: "ET MALWARE AND Outbound"
+        # Privilege Escalation
+        - query_string:
+            query: "PRIVESC OR \"USER=root\""
+
+
+# Alertar cuando se detecten múltiples eventos
+alert: webhook
+
+# Configurar webhook para Shuffle
+webhook:
+  url: "http://localhost:3001/api/v1/hooks/webhook_c34f9855-43bc-44e4-adaf-591cd6bd73f0"

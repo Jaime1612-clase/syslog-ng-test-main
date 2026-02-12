@@ -5,9 +5,9 @@ filebeat.inputs:
     paths:
       - /var/log/syslog-ng/syslog-client/ataque.log
     scan_frequency: 1s
-    ignore_older: 0
+    ignore_older: 1m
     close_inactive: 1m
-    clean_inactive: 2m
+    clean_inactive: 3m
 
 output.logstash:
   hosts: ["logstash:5044"]

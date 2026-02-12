@@ -4,7 +4,9 @@
         "/^python \\.\\\\Ataques-Controlado\\\\crear_alerta_2\\.0\\.py$/": {
             "approve": true,
             "matchCommandLine": true
-        }
+        },
+        "docker-compose": true,
+        "docker exec": true
     },
     "python-envs.defaultEnvManager": "ms-python.python:system"
 }

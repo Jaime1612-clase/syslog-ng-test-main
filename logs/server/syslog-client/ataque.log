@@ -1,367 +1,341 @@
-Feb 11 20:27:34 syslog-client sshd[3942]: Failed password for nginx from 10.0.0.5 port 22 ssh2
-Feb 11 20:27:34 syslog-client sshd[3363]: Failed password for user from 10.0.0.5 port 22 ssh2
-Feb 11 20:27:34 syslog-client sshd[1514]: Failed password for root from 10.0.0.5 port 22 ssh2
-Feb 11 20:27:34 syslog-client sshd[5644]: Failed password for root from 10.0.0.5 port 22 ssh2
-Feb 11 20:27:34 syslog-client sshd[2439]: Failed password for user from 10.0.0.5 port 22 ssh2
-Feb 11 20:27:34 syslog-client sshd[9363]: Failed password for apache from 10.0.0.5 port 22 ssh2
-Feb 11 20:27:34 syslog-client sshd[7140]: Failed password for nginx from 10.0.0.5 port 22 ssh2
-Feb 11 20:27:34 syslog-client sshd[1522]: Failed password for postgres from 10.0.0.5 port 22 ssh2
-Feb 11 20:27:34 syslog-client sshd[7535]: Failed password for test from 10.0.0.5 port 22 ssh2
-Feb 11 20:27:34 syslog-client sshd[6602]: Failed password for postgres from 10.0.0.5 port 22 ssh2
-Feb 11 20:27:34 syslog-client sshd[5359]: Failed password for postgres from 10.0.0.5 port 22 ssh2
-Feb 11 20:27:34 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=5432
-Feb 11 20:27:34 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=5432
-Feb 11 20:27:34 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=443
-Feb 11 20:27:34 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=443
-Feb 11 20:27:34 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=8443
-Feb 11 20:27:34 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=8080
-Feb 11 20:27:34 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=80
-Feb 11 20:27:34 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=3306
-Feb 11 20:27:34 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=443
-Feb 11 20:27:34 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=5432
-Feb 11 20:27:34 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=8080
-Feb 11 20:27:34 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=443
-Feb 11 20:27:34 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=8080
-Feb 11 20:27:35 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=8080
-Feb 11 20:27:35 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=80
-Feb 11 20:27:35 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=5432
-Feb 11 20:27:35 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=22
-Feb 11 20:27:35 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=8080
-Feb 11 20:27:35 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=443
-Feb 11 20:27:35 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=8443
-Feb 11 20:27:35 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=8080
-Feb 11 20:27:35 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=8443
-Feb 11 20:27:35 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=3306
-Feb 11 20:27:35 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=80
-Feb 11 20:27:35 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=22
-Feb 11 20:27:35 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='UNION SELECT * FROM users--'
-Feb 11 20:27:35 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload=''; DELETE FROM logs;--'
-Feb 11 20:27:35 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='' OR '1'='1'
-Feb 11 20:27:35 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload=''; DELETE FROM logs;--'
-Feb 11 20:27:35 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='UNION SELECT * FROM users--'
-Feb 11 20:27:35 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='DROP TABLE users;--'
-Feb 11 20:27:35 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='' OR '1'='1'
-Feb 11 20:27:35 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='' OR '1'='1'
-Feb 11 20:27:35 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='DROP TABLE users;--'
-Feb 11 20:27:35 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='UNION SELECT * FROM users--'
-Feb 11 20:27:35 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='DROP TABLE users;--'
-Feb 11 20:27:35 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='DROP TABLE users;--'
-Feb 11 20:27:35 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='DROP TABLE users;--'
-Feb 11 20:27:35 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='DROP TABLE users;--'
-Feb 11 20:27:35 syslog-client httpd: 10.0.0.5 - - "POST /api/users HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:27:35 syslog-client httpd: 10.0.0.5 - - "GET /api/users HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:27:35 syslog-client httpd: 10.0.0.5 - - "POST /upload.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:27:35 syslog-client httpd: 10.0.0.5 - - "GET /admin.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:27:35 syslog-client httpd: 10.0.0.5 - - "GET /config.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:27:35 syslog-client httpd: 10.0.0.5 - - "POST /admin/login HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:27:35 syslog-client httpd: 10.0.0.5 - - "POST /upload.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:27:35 syslog-client httpd: 10.0.0.5 - - "POST /admin/login HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:27:35 syslog-client httpd: 10.0.0.5 - - "POST /config.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:27:35 syslog-client httpd: 10.0.0.5 - - "POST /admin/login HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:27:35 syslog-client httpd: 10.0.0.5 - - "POST /api/users HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:27:35 syslog-client httpd: 10.0.0.5 - - "POST /api/users HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:27:35 syslog-client httpd: 10.0.0.5 - - "GET /admin/login HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:27:35 syslog-client httpd: 10.0.0.5 - - "GET /admin.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:27:35 syslog-client httpd: 10.0.0.5 - - "GET /upload.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:27:36 syslog-client httpd: 10.0.0.5 - - "POST /config.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:27:36 syslog-client sudo: admin : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
-Feb 11 20:27:36 syslog-client sudo: admin : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
-Feb 11 20:27:36 syslog-client sudo: admin : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
-Feb 11 20:27:36 syslog-client kernel: [PRIVESC] Buffer overflow from 203.0.113.45 via admin
-Feb 11 20:27:36 syslog-client ClamAV: [MALWARE] /tmp/trojan: Backdoor.Linux from 10.0.0.5
-Feb 11 20:27:36 syslog-client ClamAV: [MALWARE] /tmp/trojan: Trojan.Generic from 192.168.1.100
-Feb 11 20:27:36 syslog-client ClamAV: [MALWARE] /.ssh/backdoor.py: Backdoor.Linux from 198.51.100.10
-Feb 11 20:27:36 syslog-client ClamAV: [MALWARE] /tmp/trojan: Backdoor.Linux from 192.168.1.100
-Feb 11 20:27:36 syslog-client ClamAV: [MALWARE] /var/tmp/payload.exe: Dropper from 203.0.113.45
-Feb 11 20:27:36 syslog-client ClamAV: [MALWARE] /.ssh/backdoor.py: Rootkit.Generic from 198.51.100.10
-Feb 11 20:27:36 syslog-client ClamAV: [MALWARE] /.ssh/backdoor.py: Trojan.Generic from 10.0.0.5
-Feb 11 20:27:36 syslog-client ClamAV: [MALWARE] /tmp/trojan: Trojan.Generic from 192.168.1.100
-Feb 11 20:27:36 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 192.168.1.100 transferring 4195910 bytes
-Feb 11 20:27:36 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 192.168.1.100 transferring 5752055 bytes
-Feb 11 20:27:36 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 192.168.1.100 transferring 5784204 bytes
-Feb 11 20:27:36 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 192.168.1.100 transferring 3548813 bytes
-Feb 11 20:27:36 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 192.168.1.100 transferring 2834110 bytes
-Feb 11 20:27:36 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 192.168.1.100 transferring 1514410 bytes
-Feb 11 20:27:36 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 192.168.1.100 transferring 3096553 bytes
-Feb 11 20:27:36 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 192.168.1.100 transferring 5060640 bytes
-Feb 11 20:27:36 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 192.168.1.100 transferring 1256270 bytes
-Feb 11 20:28:16 syslog-client sshd[7466]: Failed password for postgres from 10.0.0.5 port 22 ssh2
-Feb 11 20:28:16 syslog-client sshd[3982]: Failed password for user from 10.0.0.5 port 22 ssh2
-Feb 11 20:28:16 syslog-client sshd[6514]: Failed password for admin from 10.0.0.5 port 22 ssh2
-Feb 11 20:28:16 syslog-client sshd[6747]: Failed password for user from 10.0.0.5 port 22 ssh2
-Feb 11 20:28:17 syslog-client sshd[9180]: Failed password for root from 10.0.0.5 port 22 ssh2
-Feb 11 20:28:17 syslog-client sshd[6884]: Failed password for root from 10.0.0.5 port 22 ssh2
-Feb 11 20:28:17 syslog-client sshd[2378]: Failed password for admin from 10.0.0.5 port 22 ssh2
-Feb 11 20:28:17 syslog-client sshd[1222]: Failed password for nginx from 10.0.0.5 port 22 ssh2
-Feb 11 20:28:17 syslog-client sshd[7628]: Failed password for root from 10.0.0.5 port 22 ssh2
-Feb 11 20:28:17 syslog-client sshd[7126]: Failed password for admin from 10.0.0.5 port 22 ssh2
-Feb 11 20:28:17 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=192.168.1.1 PROTO=TCP DPT=8443
-Feb 11 20:28:17 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=192.168.1.1 PROTO=TCP DPT=443
-Feb 11 20:28:17 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=192.168.1.1 PROTO=TCP DPT=5432
-Feb 11 20:28:17 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=192.168.1.1 PROTO=TCP DPT=5432
-Feb 11 20:28:17 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=192.168.1.1 PROTO=TCP DPT=3306
-Feb 11 20:28:17 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=192.168.1.1 PROTO=TCP DPT=3306
-Feb 11 20:28:17 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=192.168.1.1 PROTO=TCP DPT=3306
-Feb 11 20:28:17 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=192.168.1.1 PROTO=TCP DPT=3306
-Feb 11 20:28:17 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=192.168.1.1 PROTO=TCP DPT=3306
-Feb 11 20:28:17 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=192.168.1.1 PROTO=TCP DPT=80
-Feb 11 20:28:17 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=192.168.1.1 PROTO=TCP DPT=3306
-Feb 11 20:28:17 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=192.168.1.1 PROTO=TCP DPT=22
-Feb 11 20:28:17 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=192.168.1.1 PROTO=TCP DPT=80
-Feb 11 20:28:17 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=192.168.1.1 PROTO=TCP DPT=80
-Feb 11 20:28:17 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=192.168.1.1 PROTO=TCP DPT=8443
-Feb 11 20:28:17 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=192.168.1.1 PROTO=TCP DPT=22
-Feb 11 20:28:17 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=192.168.1.1 PROTO=TCP DPT=22
-Feb 11 20:28:17 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=192.168.1.1 PROTO=TCP DPT=80
-Feb 11 20:28:17 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=192.168.1.1 PROTO=TCP DPT=443
-Feb 11 20:28:17 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=192.168.1.1 PROTO=TCP DPT=22
-Feb 11 20:28:17 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=10.0.0.5 DST=192.168.1.1 PROTO=TCP DPT=22
-Feb 11 20:28:17 syslog-client webapp: SQL INJECTION from 203.0.113.45: payload='DROP TABLE users;--'
-Feb 11 20:28:17 syslog-client webapp: SQL INJECTION from 203.0.113.45: payload=''; DELETE FROM logs;--'
-Feb 11 20:28:17 syslog-client webapp: SQL INJECTION from 203.0.113.45: payload='DROP TABLE users;--'
-Feb 11 20:28:17 syslog-client webapp: SQL INJECTION from 203.0.113.45: payload=''; DELETE FROM logs;--'
-Feb 11 20:28:17 syslog-client webapp: SQL INJECTION from 203.0.113.45: payload='' OR '1'='1'
-Feb 11 20:28:17 syslog-client webapp: SQL INJECTION from 203.0.113.45: payload='' OR '1'='1'
-Feb 11 20:28:17 syslog-client webapp: SQL INJECTION from 203.0.113.45: payload='DROP TABLE users;--'
-Feb 11 20:28:17 syslog-client webapp: SQL INJECTION from 203.0.113.45: payload='UNION SELECT * FROM users--'
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "GET /admin.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "POST /config.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "GET /admin/login HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "GET /admin.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "POST /api/users HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "GET /config.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "GET /upload.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "POST /admin/login HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "POST /api/users HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "POST /admin/login HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "POST /config.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "GET /admin.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "POST /config.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "POST /admin.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "GET /config.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "GET /config.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "POST /admin/login HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "GET /upload.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "GET /api/users HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "POST /upload.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "POST /admin.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "POST /admin.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client httpd: 198.51.100.10 - - "POST /config.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:28:18 syslog-client sudo: postgres : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
-Feb 11 20:28:18 syslog-client sudo: postgres : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
-Feb 11 20:28:18 syslog-client sudo: postgres : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
-Feb 11 20:28:18 syslog-client kernel: [PRIVESC] Buffer overflow from 10.0.0.5 via postgres
-Feb 11 20:28:18 syslog-client ClamAV: [MALWARE] /var/tmp/payload.exe: Rootkit.Generic from 172.16.0.50
-Feb 11 20:28:18 syslog-client ClamAV: [MALWARE] /tmp/trojan: Trojan.Generic from 198.51.100.10
-Feb 11 20:28:18 syslog-client ClamAV: [MALWARE] /tmp/malware.sh: Dropper from 10.0.0.5
-Feb 11 20:28:18 syslog-client ClamAV: [MALWARE] /tmp/trojan: Backdoor.Linux from 10.0.0.5
-Feb 11 20:28:18 syslog-client ClamAV: [MALWARE] /tmp/malware.sh: Rootkit.Generic from 10.0.0.5
-Feb 11 20:28:18 syslog-client ClamAV: [MALWARE] /tmp/trojan: Rootkit.Generic from 192.168.1.100
-Feb 11 20:28:18 syslog-client ClamAV: [MALWARE] /var/tmp/payload.exe: Dropper from 172.16.0.50
-Feb 11 20:28:18 syslog-client ClamAV: [MALWARE] /tmp/trojan: Trojan.Generic from 192.168.1.100
-Feb 11 20:28:19 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 10.0.0.5 transferring 5188349 bytes
-Feb 11 20:28:19 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 10.0.0.5 transferring 8594757 bytes
-Feb 11 20:28:19 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 10.0.0.5 transferring 8998458 bytes
-Feb 11 20:28:19 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 10.0.0.5 transferring 5711750 bytes
-Feb 11 20:28:19 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 10.0.0.5 transferring 1448422 bytes
-Feb 11 20:28:19 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 10.0.0.5 transferring 4690704 bytes
-Feb 11 20:28:19 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 10.0.0.5 transferring 2301497 bytes
-Feb 11 20:28:19 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 10.0.0.5 transferring 6010682 bytes
-Feb 11 20:28:19 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 10.0.0.5 transferring 5761478 bytes
-Feb 11 20:28:19 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 10.0.0.5 transferring 9213699 bytes
-Feb 11 20:28:19 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 10.0.0.5 transferring 7379200 bytes
-Feb 11 20:28:19 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 10.0.0.5 transferring 9512606 bytes
-Feb 11 20:28:19 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 10.0.0.5 transferring 9165615 bytes
-Feb 11 20:28:19 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 10.0.0.5 transferring 9208138 bytes
-Feb 11 20:28:19 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 10.0.0.5 transferring 4535046 bytes
-Feb 11 20:29:47 syslog-client sshd[1189]: Failed password for postgres from 192.168.1.100 port 22 ssh2
-Feb 11 20:29:47 syslog-client sshd[6379]: Failed password for nginx from 192.168.1.100 port 22 ssh2
-Feb 11 20:29:47 syslog-client sshd[7640]: Failed password for nginx from 192.168.1.100 port 22 ssh2
-Feb 11 20:29:47 syslog-client sshd[2035]: Failed password for user from 192.168.1.100 port 22 ssh2
-Feb 11 20:29:47 syslog-client sshd[3691]: Failed password for nginx from 192.168.1.100 port 22 ssh2
-Feb 11 20:29:47 syslog-client sshd[8373]: Failed password for nginx from 192.168.1.100 port 22 ssh2
-Feb 11 20:29:47 syslog-client sshd[7503]: Failed password for postgres from 192.168.1.100 port 22 ssh2
-Feb 11 20:29:47 syslog-client sshd[5771]: Failed password for test from 192.168.1.100 port 22 ssh2
-Feb 11 20:29:47 syslog-client sshd[6916]: Failed password for user from 192.168.1.100 port 22 ssh2
-Feb 11 20:29:47 syslog-client sshd[9443]: Failed password for root from 192.168.1.100 port 22 ssh2
-Feb 11 20:29:47 syslog-client sshd[9715]: Failed password for test from 192.168.1.100 port 22 ssh2
-Feb 11 20:29:47 syslog-client sshd[3686]: Failed password for user from 192.168.1.100 port 22 ssh2
-Feb 11 20:29:47 syslog-client sshd[1748]: Failed password for user from 192.168.1.100 port 22 ssh2
-Feb 11 20:29:47 syslog-client sshd[4699]: Failed password for postgres from 192.168.1.100 port 22 ssh2
-Feb 11 20:29:47 syslog-client sshd[8487]: Failed password for user from 192.168.1.100 port 22 ssh2
-Feb 11 20:29:47 syslog-client sshd[1333]: Failed password for admin from 192.168.1.100 port 22 ssh2
-Feb 11 20:29:47 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=5432
-Feb 11 20:29:47 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=5432
-Feb 11 20:29:47 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=5432
-Feb 11 20:29:48 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=80
-Feb 11 20:29:48 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=3306
-Feb 11 20:29:48 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=22
-Feb 11 20:29:48 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=80
-Feb 11 20:29:48 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=22
-Feb 11 20:29:48 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=3306
-Feb 11 20:29:48 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=3306
-Feb 11 20:29:48 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=5432
-Feb 11 20:29:48 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=8080
-Feb 11 20:29:48 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=443
-Feb 11 20:29:48 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=3306
-Feb 11 20:29:48 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=80
-Feb 11 20:29:48 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=3306
-Feb 11 20:29:48 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='' OR '1'='1'
-Feb 11 20:29:48 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='DROP TABLE users;--'
-Feb 11 20:29:48 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='' OR '1'='1'
-Feb 11 20:29:48 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload=''; DELETE FROM logs;--'
-Feb 11 20:29:48 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload=''; DELETE FROM logs;--'
-Feb 11 20:29:48 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='UNION SELECT * FROM users--'
-Feb 11 20:29:48 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload=''; DELETE FROM logs;--'
-Feb 11 20:29:48 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='' OR '1'='1'
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "POST /config.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "POST /api/users HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "GET /admin.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "GET /upload.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "GET /api/users HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "GET /api/users HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "POST /admin/login HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "GET /config.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "GET /api/users HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "GET /admin/login HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "POST /upload.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "POST /upload.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "GET /admin.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "GET /upload.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "POST /admin/login HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "POST /admin/login HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "GET /upload.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "POST /upload.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "GET /admin/login HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "GET /api/users HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "POST /api/users HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "POST /config.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:29:48 syslog-client httpd: 198.51.100.10 - - "POST /config.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:29:49 syslog-client httpd: 198.51.100.10 - - "GET /admin.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:29:49 syslog-client httpd: 198.51.100.10 - - "GET /config.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:29:49 syslog-client sudo: user : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
-Feb 11 20:29:49 syslog-client sudo: user : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
-Feb 11 20:29:49 syslog-client sudo: user : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
-Feb 11 20:29:49 syslog-client sudo: user : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
-Feb 11 20:29:49 syslog-client sudo: user : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
-Feb 11 20:29:49 syslog-client kernel: [PRIVESC] Buffer overflow from 198.51.100.10 via user
-Feb 11 20:29:49 syslog-client ClamAV: [MALWARE] /tmp/trojan: Dropper from 10.0.0.5
-Feb 11 20:29:49 syslog-client ClamAV: [MALWARE] /tmp/trojan: Trojan.Generic from 203.0.113.45
-Feb 11 20:29:49 syslog-client ClamAV: [MALWARE] /tmp/malware.sh: Trojan.Generic from 172.16.0.50
-Feb 11 20:29:49 syslog-client ClamAV: [MALWARE] /tmp/malware.sh: Dropper from 192.168.1.100
-Feb 11 20:29:49 syslog-client ClamAV: [MALWARE] /tmp/malware.sh: Backdoor.Linux from 10.0.0.5
-Feb 11 20:29:49 syslog-client ClamAV: [MALWARE] /tmp/malware.sh: Trojan.Generic from 203.0.113.45
-Feb 11 20:29:49 syslog-client ClamAV: [MALWARE] /tmp/malware.sh: Dropper from 172.16.0.50
-Feb 11 20:29:49 syslog-client ClamAV: [MALWARE] /tmp/trojan: Rootkit.Generic from 192.168.1.100
-Feb 11 20:29:49 syslog-client ClamAV: [MALWARE] /tmp/trojan: Backdoor.Linux from 192.168.1.100
-Feb 11 20:29:49 syslog-client ClamAV: [MALWARE] /var/tmp/payload.exe: Rootkit.Generic from 10.0.0.5
-Feb 11 20:29:49 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 10.0.0.5 transferring 4375155 bytes
-Feb 11 20:29:49 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 10.0.0.5 transferring 8445279 bytes
-Feb 11 20:29:49 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 10.0.0.5 transferring 2238268 bytes
-Feb 11 20:29:49 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 10.0.0.5 transferring 2752764 bytes
-Feb 11 20:29:49 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 10.0.0.5 transferring 4398647 bytes
-Feb 11 20:29:49 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 10.0.0.5 transferring 7439886 bytes
-Feb 11 20:29:49 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 10.0.0.5 transferring 9232746 bytes
-Feb 11 20:29:49 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 10.0.0.5 transferring 5510631 bytes
-Feb 11 20:29:49 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 10.0.0.5 transferring 4055914 bytes
-Feb 11 20:29:49 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 10.0.0.5 transferring 1009104 bytes
-Feb 11 20:29:50 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 10.0.0.5 transferring 4822106 bytes
-Feb 11 20:29:50 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 10.0.0.5 transferring 1428287 bytes
-Feb 11 20:29:50 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 10.0.0.5 transferring 8243110 bytes
-Feb 11 20:29:50 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 10.0.0.5 transferring 1191711 bytes
-Feb 11 20:35:14 syslog-client sshd[6596]: Failed password for postgres from 10.0.0.5 port 22 ssh2
-Feb 11 20:35:14 syslog-client sshd[6679]: Failed password for admin from 10.0.0.5 port 22 ssh2
-Feb 11 20:35:14 syslog-client sshd[5696]: Failed password for apache from 10.0.0.5 port 22 ssh2
-Feb 11 20:35:14 syslog-client sshd[2295]: Failed password for apache from 10.0.0.5 port 22 ssh2
-Feb 11 20:35:14 syslog-client sshd[6375]: Failed password for test from 10.0.0.5 port 22 ssh2
-Feb 11 20:35:14 syslog-client sshd[9764]: Failed password for admin from 10.0.0.5 port 22 ssh2
-Feb 11 20:35:14 syslog-client sshd[6503]: Failed password for nginx from 10.0.0.5 port 22 ssh2
-Feb 11 20:35:14 syslog-client sshd[2236]: Failed password for admin from 10.0.0.5 port 22 ssh2
-Feb 11 20:35:14 syslog-client sshd[6631]: Failed password for root from 10.0.0.5 port 22 ssh2
-Feb 11 20:35:14 syslog-client sshd[1203]: Failed password for root from 10.0.0.5 port 22 ssh2
-Feb 11 20:35:14 syslog-client sshd[8097]: Failed password for test from 10.0.0.5 port 22 ssh2
-Feb 11 20:35:15 syslog-client sshd[6899]: Failed password for root from 10.0.0.5 port 22 ssh2
-Feb 11 20:35:15 syslog-client sshd[3177]: Failed password for apache from 10.0.0.5 port 22 ssh2
-Feb 11 20:35:15 syslog-client sshd[2744]: Failed password for root from 10.0.0.5 port 22 ssh2
-Feb 11 20:35:15 syslog-client sshd[5609]: Failed password for nginx from 10.0.0.5 port 22 ssh2
-Feb 11 20:35:15 syslog-client sshd[6900]: Failed password for admin from 10.0.0.5 port 22 ssh2
-Feb 11 20:35:15 syslog-client sshd[6313]: Failed password for apache from 10.0.0.5 port 22 ssh2
-Feb 11 20:35:15 syslog-client sshd[3424]: Failed password for user from 10.0.0.5 port 22 ssh2
-Feb 11 20:35:15 syslog-client sshd[9973]: Failed password for user from 10.0.0.5 port 22 ssh2
-Feb 11 20:35:15 syslog-client sshd[4632]: Failed password for test from 10.0.0.5 port 22 ssh2
-Feb 11 20:35:15 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=5432
-Feb 11 20:35:15 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=3306
-Feb 11 20:35:15 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=8443
-Feb 11 20:35:15 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=22
-Feb 11 20:35:15 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=80
-Feb 11 20:35:15 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=80
-Feb 11 20:35:15 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=8443
-Feb 11 20:35:15 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=8443
-Feb 11 20:35:15 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=8443
-Feb 11 20:35:15 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=8443
-Feb 11 20:35:15 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=8443
-Feb 11 20:35:15 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=5432
-Feb 11 20:35:15 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=8443
-Feb 11 20:35:15 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=3306
-Feb 11 20:35:15 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=8443
-Feb 11 20:35:15 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=5432
-Feb 11 20:35:15 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=443
-Feb 11 20:35:15 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='UNION SELECT * FROM users--'
-Feb 11 20:35:15 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload=''; DELETE FROM logs;--'
-Feb 11 20:35:15 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='DROP TABLE users;--'
-Feb 11 20:35:15 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='UNION SELECT * FROM users--'
-Feb 11 20:35:15 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='' OR '1'='1'
-Feb 11 20:35:16 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='' OR '1'='1'
-Feb 11 20:35:16 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload=''; DELETE FROM logs;--'
-Feb 11 20:35:16 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='UNION SELECT * FROM users--'
-Feb 11 20:35:16 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='UNION SELECT * FROM users--'
-Feb 11 20:35:16 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='' OR '1'='1'
-Feb 11 20:35:16 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload=''; DELETE FROM logs;--'
-Feb 11 20:35:16 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='DROP TABLE users;--'
-Feb 11 20:35:16 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='' OR '1'='1'
-Feb 11 20:35:16 syslog-client webapp: SQL INJECTION from 198.51.100.10: payload='UNION SELECT * FROM users--'
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "GET /api/users HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "GET /admin.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "GET /api/users HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "GET /upload.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "GET /api/users HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "POST /api/users HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "GET /config.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "GET /config.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "GET /api/users HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "GET /admin/login HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "POST /api/users HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "POST /config.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "GET /config.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "POST /config.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "GET /admin.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "GET /admin/login HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "GET /upload.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "GET /api/users HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "GET /api/users HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "GET /config.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "GET /api/users HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "GET /api/users HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "POST /upload.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "GET /upload.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client httpd: 10.0.0.5 - - "POST /admin/login HTTP/1.1" 403 - "-" "Mozilla/5.0"
-Feb 11 20:35:16 syslog-client sudo: admin : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
-Feb 11 20:35:16 syslog-client sudo: admin : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
-Feb 11 20:35:16 syslog-client sudo: admin : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
-Feb 11 20:35:16 syslog-client kernel: [PRIVESC] Buffer overflow from 172.16.0.50 via admin
-Feb 11 20:35:16 syslog-client ClamAV: [MALWARE] /var/tmp/payload.exe: Trojan.Generic from 203.0.113.45
-Feb 11 20:35:16 syslog-client ClamAV: [MALWARE] /tmp/malware.sh: Backdoor.Linux from 10.0.0.5
-Feb 11 20:35:17 syslog-client ClamAV: [MALWARE] /var/tmp/payload.exe: Rootkit.Generic from 192.168.1.100
-Feb 11 20:35:17 syslog-client ClamAV: [MALWARE] /tmp/trojan: Rootkit.Generic from 172.16.0.50
-Feb 11 20:35:17 syslog-client ClamAV: [MALWARE] /tmp/malware.sh: Rootkit.Generic from 198.51.100.10
-Feb 11 20:35:17 syslog-client ClamAV: [MALWARE] /var/tmp/payload.exe: Rootkit.Generic from 10.0.0.5
-Feb 11 20:35:17 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 192.168.1.100 transferring 6622354 bytes
-Feb 11 20:35:17 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 192.168.1.100 transferring 6883657 bytes
-Feb 11 20:35:17 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 192.168.1.100 transferring 3230857 bytes
-Feb 11 20:35:17 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 192.168.1.100 transferring 8334048 bytes
-Feb 11 20:35:17 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 192.168.1.100 transferring 9715413 bytes
-Feb 11 20:35:17 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 192.168.1.100 transferring 2785041 bytes
-Feb 11 20:35:17 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 192.168.1.100 transferring 5689504 bytes
-Feb 11 20:35:17 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 192.168.1.100 transferring 3398532 bytes
-Feb 11 20:35:17 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 192.168.1.100 transferring 6657513 bytes
-Feb 11 20:35:17 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 192.168.1.100 transferring 8958911 bytes
+Feb 12 00:14:42 syslog-client sshd[1909]: Failed password for nginx from 172.16.0.50 port 22 ssh2
+Feb 12 00:14:42 syslog-client sshd[5109]: Failed password for postgres from 172.16.0.50 port 22 ssh2
+Feb 12 00:14:42 syslog-client sshd[8955]: Failed password for test from 172.16.0.50 port 22 ssh2
+Feb 12 00:14:42 syslog-client sshd[3280]: Failed password for test from 172.16.0.50 port 22 ssh2
+Feb 12 00:14:42 syslog-client sshd[9940]: Failed password for root from 172.16.0.50 port 22 ssh2
+Feb 12 00:14:42 syslog-client sshd[5841]: Failed password for root from 172.16.0.50 port 22 ssh2
+Feb 12 00:14:42 syslog-client sshd[2503]: Failed password for user from 172.16.0.50 port 22 ssh2
+Feb 12 00:14:42 syslog-client sshd[8634]: Failed password for test from 172.16.0.50 port 22 ssh2
+Feb 12 00:14:42 syslog-client sshd[1068]: Failed password for root from 172.16.0.50 port 22 ssh2
+Feb 12 00:14:42 syslog-client sshd[8787]: Failed password for user from 172.16.0.50 port 22 ssh2
+Feb 12 00:14:42 syslog-client sshd[8572]: Failed password for user from 172.16.0.50 port 22 ssh2
+Feb 12 00:14:42 syslog-client sshd[3716]: Failed password for apache from 172.16.0.50 port 22 ssh2
+Feb 12 00:14:42 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=443
+Feb 12 00:14:42 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=3306
+Feb 12 00:14:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=8080
+Feb 12 00:14:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=22
+Feb 12 00:14:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=443
+Feb 12 00:14:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=3306
+Feb 12 00:14:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=443
+Feb 12 00:14:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=5432
+Feb 12 00:14:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=22
+Feb 12 00:14:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=3306
+Feb 12 00:14:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=80
+Feb 12 00:14:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=443
+Feb 12 00:14:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=80
+Feb 12 00:14:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=5432
+Feb 12 00:14:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=5432
+Feb 12 00:14:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=80
+Feb 12 00:14:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=22
+Feb 12 00:14:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=8080
+Feb 12 00:14:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=8443
+Feb 12 00:14:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=443
+Feb 12 00:14:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=192.168.1.100 DST=192.168.1.1 PROTO=TCP DPT=3306
+Feb 12 00:14:43 syslog-client webapp: SQL INJECTION from 172.16.0.50: payload='' OR '1'='1'
+Feb 12 00:14:43 syslog-client webapp: SQL INJECTION from 172.16.0.50: payload=''; DELETE FROM logs;--'
+Feb 12 00:14:43 syslog-client webapp: SQL INJECTION from 172.16.0.50: payload='DROP TABLE users;--'
+Feb 12 00:14:43 syslog-client webapp: SQL INJECTION from 172.16.0.50: payload='UNION SELECT * FROM users--'
+Feb 12 00:14:43 syslog-client webapp: SQL INJECTION from 172.16.0.50: payload='' OR '1'='1'
+Feb 12 00:14:43 syslog-client webapp: SQL INJECTION from 172.16.0.50: payload=''; DELETE FROM logs;--'
+Feb 12 00:14:43 syslog-client webapp: SQL INJECTION from 172.16.0.50: payload=''; DELETE FROM logs;--'
+Feb 12 00:14:43 syslog-client webapp: SQL INJECTION from 172.16.0.50: payload='UNION SELECT * FROM users--'
+Feb 12 00:14:43 syslog-client httpd: 10.0.0.5 - - "POST /admin.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 00:14:43 syslog-client httpd: 10.0.0.5 - - "GET /admin/login HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 00:14:43 syslog-client httpd: 10.0.0.5 - - "POST /admin.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 00:14:43 syslog-client httpd: 10.0.0.5 - - "GET /api/users HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 00:14:43 syslog-client httpd: 10.0.0.5 - - "POST /admin/login HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 00:14:43 syslog-client httpd: 10.0.0.5 - - "GET /config.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 00:14:43 syslog-client httpd: 10.0.0.5 - - "POST /upload.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 00:14:43 syslog-client httpd: 10.0.0.5 - - "POST /admin.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 00:14:43 syslog-client httpd: 10.0.0.5 - - "POST /admin.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 00:14:43 syslog-client httpd: 10.0.0.5 - - "GET /admin/login HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 00:14:43 syslog-client httpd: 10.0.0.5 - - "GET /api/users HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 00:14:44 syslog-client httpd: 10.0.0.5 - - "POST /upload.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 00:14:44 syslog-client httpd: 10.0.0.5 - - "GET /api/users HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 00:14:44 syslog-client httpd: 10.0.0.5 - - "POST /admin.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 00:14:44 syslog-client httpd: 10.0.0.5 - - "GET /admin.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 00:14:44 syslog-client httpd: 10.0.0.5 - - "POST /api/users HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 00:14:44 syslog-client sudo: apache : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
+Feb 12 00:14:44 syslog-client sudo: apache : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
+Feb 12 00:14:44 syslog-client sudo: apache : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
+Feb 12 00:14:44 syslog-client sudo: apache : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
+Feb 12 00:14:44 syslog-client kernel: [PRIVESC] Buffer overflow from 203.0.113.45 via apache
+Feb 12 00:14:44 syslog-client ClamAV: [MALWARE] /tmp/trojan: Trojan.Generic from 192.168.1.100
+Feb 12 00:14:44 syslog-client ClamAV: [MALWARE] /.ssh/backdoor.py: Backdoor.Linux from 198.51.100.10
+Feb 12 00:14:44 syslog-client ClamAV: [MALWARE] /.ssh/backdoor.py: Rootkit.Generic from 198.51.100.10
+Feb 12 00:14:44 syslog-client ClamAV: [MALWARE] /tmp/malware.sh: Backdoor.Linux from 203.0.113.45
+Feb 12 00:14:44 syslog-client ClamAV: [MALWARE] /tmp/trojan: Backdoor.Linux from 198.51.100.10
+Feb 12 00:14:44 syslog-client ClamAV: [MALWARE] /.ssh/backdoor.py: Backdoor.Linux from 10.0.0.5
+Feb 12 00:14:44 syslog-client ClamAV: [MALWARE] /tmp/malware.sh: Trojan.Generic from 172.16.0.50
+Feb 12 00:14:44 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 203.0.113.45 transferring 4250354 bytes
+Feb 12 00:14:44 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 203.0.113.45 transferring 3208938 bytes
+Feb 12 00:14:44 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 203.0.113.45 transferring 6459939 bytes
+Feb 12 00:14:44 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 203.0.113.45 transferring 4815637 bytes
+Feb 12 00:14:44 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 203.0.113.45 transferring 4048186 bytes
+Feb 12 00:14:44 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 203.0.113.45 transferring 9360370 bytes
+Feb 12 00:14:44 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 203.0.113.45 transferring 7930925 bytes
+Feb 12 00:14:44 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 203.0.113.45 transferring 8222532 bytes
+Feb 12 00:14:44 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 203.0.113.45 transferring 1528534 bytes
+Feb 12 00:14:44 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 203.0.113.45 transferring 4116922 bytes
+Feb 12 00:27:48 syslog-client sshd[2268]: Failed password for nginx from 198.51.100.10 port 22 ssh2
+Feb 12 00:27:48 syslog-client sshd[4635]: Failed password for admin from 198.51.100.10 port 22 ssh2
+Feb 12 00:27:48 syslog-client sshd[2700]: Failed password for nginx from 198.51.100.10 port 22 ssh2
+Feb 12 00:27:48 syslog-client sshd[7809]: Failed password for postgres from 198.51.100.10 port 22 ssh2
+Feb 12 00:27:48 syslog-client sshd[8198]: Failed password for postgres from 198.51.100.10 port 22 ssh2
+Feb 12 00:27:48 syslog-client sshd[9139]: Failed password for postgres from 198.51.100.10 port 22 ssh2
+Feb 12 00:27:48 syslog-client sshd[4495]: Failed password for apache from 198.51.100.10 port 22 ssh2
+Feb 12 00:27:48 syslog-client sshd[2655]: Failed password for test from 198.51.100.10 port 22 ssh2
+Feb 12 00:27:48 syslog-client sshd[1039]: Failed password for test from 198.51.100.10 port 22 ssh2
+Feb 12 00:27:48 syslog-client sshd[3503]: Failed password for test from 198.51.100.10 port 22 ssh2
+Feb 12 00:27:48 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=80
+Feb 12 00:27:49 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=3306
+Feb 12 00:27:49 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=80
+Feb 12 00:27:49 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=3306
+Feb 12 00:27:49 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=8443
+Feb 12 00:27:49 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=443
+Feb 12 00:27:49 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=8080
+Feb 12 00:27:49 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=443
+Feb 12 00:27:49 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=22
+Feb 12 00:27:49 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=8080
+Feb 12 00:27:49 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=8443
+Feb 12 00:27:49 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=80
+Feb 12 00:27:49 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=22
+Feb 12 00:27:49 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=22
+Feb 12 00:27:49 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=22
+Feb 12 00:27:49 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=3306
+Feb 12 00:27:49 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=3306
+Feb 12 00:27:49 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=8080
+Feb 12 00:27:49 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.10 DST=192.168.1.1 PROTO=TCP DPT=80
+Feb 12 00:27:49 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload='UNION SELECT * FROM users--'
+Feb 12 00:27:49 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload='UNION SELECT * FROM users--'
+Feb 12 00:27:49 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload=''; DELETE FROM logs;--'
+Feb 12 00:27:49 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload='' OR '1'='1'
+Feb 12 00:27:49 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload='' OR '1'='1'
+Feb 12 00:27:49 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload='UNION SELECT * FROM users--'
+Feb 12 00:27:49 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload=''; DELETE FROM logs;--'
+Feb 12 00:27:49 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload='DROP TABLE users;--'
+Feb 12 00:27:49 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload='' OR '1'='1'
+Feb 12 00:27:49 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload='DROP TABLE users;--'
+Feb 12 00:27:49 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload='' OR '1'='1'
+Feb 12 00:27:49 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload=''; DELETE FROM logs;--'
+Feb 12 00:27:49 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload='' OR '1'='1'
+Feb 12 00:27:49 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload=''; DELETE FROM logs;--'
+Feb 12 00:27:49 syslog-client httpd: 198.51.100.10 - - "GET /upload.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 00:27:49 syslog-client httpd: 198.51.100.10 - - "POST /api/users HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 00:27:49 syslog-client httpd: 198.51.100.10 - - "POST /api/users HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 00:27:49 syslog-client httpd: 198.51.100.10 - - "GET /upload.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 00:27:49 syslog-client httpd: 198.51.100.10 - - "GET /api/users HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 00:27:49 syslog-client httpd: 198.51.100.10 - - "GET /admin.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 00:27:49 syslog-client httpd: 198.51.100.10 - - "POST /config.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 00:27:49 syslog-client httpd: 198.51.100.10 - - "GET /upload.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 00:27:50 syslog-client httpd: 198.51.100.10 - - "POST /config.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 00:27:50 syslog-client httpd: 198.51.100.10 - - "GET /admin.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 00:27:50 syslog-client httpd: 198.51.100.10 - - "GET /config.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 00:27:50 syslog-client httpd: 198.51.100.10 - - "GET /admin.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 00:27:50 syslog-client httpd: 198.51.100.10 - - "POST /api/users HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 00:27:50 syslog-client httpd: 198.51.100.10 - - "POST /admin/login HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 00:27:50 syslog-client httpd: 198.51.100.10 - - "GET /api/users HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 00:27:50 syslog-client httpd: 198.51.100.10 - - "POST /admin/login HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 00:27:50 syslog-client httpd: 198.51.100.10 - - "POST /config.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 00:27:50 syslog-client httpd: 198.51.100.10 - - "POST /admin.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 00:27:50 syslog-client httpd: 198.51.100.10 - - "GET /config.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 00:27:50 syslog-client sudo: admin : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
+Feb 12 00:27:50 syslog-client sudo: admin : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
+Feb 12 00:27:50 syslog-client sudo: admin : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
+Feb 12 00:27:50 syslog-client sudo: admin : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
+Feb 12 00:27:50 syslog-client sudo: admin : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
+Feb 12 00:27:50 syslog-client kernel: [PRIVESC] Buffer overflow from 172.16.0.50 via admin
+Feb 12 00:27:50 syslog-client ClamAV: [MALWARE] /tmp/trojan: Dropper from 192.168.1.100
+Feb 12 00:27:50 syslog-client ClamAV: [MALWARE] /var/tmp/payload.exe: Dropper from 198.51.100.10
+Feb 12 00:27:50 syslog-client ClamAV: [MALWARE] /.ssh/backdoor.py: Backdoor.Linux from 172.16.0.50
+Feb 12 00:27:50 syslog-client ClamAV: [MALWARE] /var/tmp/payload.exe: Rootkit.Generic from 172.16.0.50
+Feb 12 00:27:50 syslog-client ClamAV: [MALWARE] /var/tmp/payload.exe: Dropper from 203.0.113.45
+Feb 12 00:27:50 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 198.51.100.10 transferring 8917367 bytes
+Feb 12 00:27:50 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 198.51.100.10 transferring 4180420 bytes
+Feb 12 00:27:50 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 198.51.100.10 transferring 5166665 bytes
+Feb 12 00:27:50 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 198.51.100.10 transferring 2915892 bytes
+Feb 12 00:27:50 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 198.51.100.10 transferring 2004919 bytes
+Feb 12 00:27:50 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 198.51.100.10 transferring 1927565 bytes
+Feb 12 00:27:50 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 198.51.100.10 transferring 1505085 bytes
+Feb 12 00:27:50 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 198.51.100.10 transferring 1855418 bytes
+Feb 12 00:27:50 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 198.51.100.10 transferring 6715599 bytes
+Feb 12 00:27:50 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 198.51.100.10 transferring 8584300 bytes
+Feb 12 00:57:42 syslog-client sshd[7744]: Failed password for user from 203.0.113.45 port 22 ssh2
+Feb 12 00:57:42 syslog-client sshd[7108]: Failed password for user from 203.0.113.45 port 22 ssh2
+Feb 12 00:57:42 syslog-client sshd[5309]: Failed password for postgres from 203.0.113.45 port 22 ssh2
+Feb 12 00:57:42 syslog-client sshd[4147]: Failed password for root from 203.0.113.45 port 22 ssh2
+Feb 12 00:57:42 syslog-client sshd[4819]: Failed password for nginx from 203.0.113.45 port 22 ssh2
+Feb 12 00:57:42 syslog-client sshd[8433]: Failed password for test from 203.0.113.45 port 22 ssh2
+Feb 12 00:57:42 syslog-client sshd[3607]: Failed password for postgres from 203.0.113.45 port 22 ssh2
+Feb 12 00:57:42 syslog-client sshd[1517]: Failed password for admin from 203.0.113.45 port 22 ssh2
+Feb 12 00:57:42 syslog-client sshd[7005]: Failed password for nginx from 203.0.113.45 port 22 ssh2
+Feb 12 00:57:42 syslog-client sshd[5924]: Failed password for user from 203.0.113.45 port 22 ssh2
+Feb 12 00:57:42 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=172.16.0.50 DST=192.168.1.1 PROTO=TCP DPT=80
+Feb 12 00:57:42 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=172.16.0.50 DST=192.168.1.1 PROTO=TCP DPT=5432
+Feb 12 00:57:42 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=172.16.0.50 DST=192.168.1.1 PROTO=TCP DPT=3306
+Feb 12 00:57:42 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=172.16.0.50 DST=192.168.1.1 PROTO=TCP DPT=8443
+Feb 12 00:57:42 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=172.16.0.50 DST=192.168.1.1 PROTO=TCP DPT=8080
+Feb 12 00:57:42 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=172.16.0.50 DST=192.168.1.1 PROTO=TCP DPT=80
+Feb 12 00:57:42 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=172.16.0.50 DST=192.168.1.1 PROTO=TCP DPT=5432
+Feb 12 00:57:42 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=172.16.0.50 DST=192.168.1.1 PROTO=TCP DPT=8080
+Feb 12 00:57:42 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=172.16.0.50 DST=192.168.1.1 PROTO=TCP DPT=5432
+Feb 12 00:57:42 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=172.16.0.50 DST=192.168.1.1 PROTO=TCP DPT=22
+Feb 12 00:57:42 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=172.16.0.50 DST=192.168.1.1 PROTO=TCP DPT=22
+Feb 12 00:57:42 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=172.16.0.50 DST=192.168.1.1 PROTO=TCP DPT=22
+Feb 12 00:57:42 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=172.16.0.50 DST=192.168.1.1 PROTO=TCP DPT=8443
+Feb 12 00:57:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=172.16.0.50 DST=192.168.1.1 PROTO=TCP DPT=3306
+Feb 12 00:57:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=172.16.0.50 DST=192.168.1.1 PROTO=TCP DPT=8443
+Feb 12 00:57:43 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=172.16.0.50 DST=192.168.1.1 PROTO=TCP DPT=80
+Feb 12 00:57:43 syslog-client webapp: SQL INJECTION from 203.0.113.45: payload=''; DELETE FROM logs;--'
+Feb 12 00:57:43 syslog-client webapp: SQL INJECTION from 203.0.113.45: payload=''; DELETE FROM logs;--'
+Feb 12 00:57:43 syslog-client webapp: SQL INJECTION from 203.0.113.45: payload='UNION SELECT * FROM users--'
+Feb 12 00:57:43 syslog-client webapp: SQL INJECTION from 203.0.113.45: payload='DROP TABLE users;--'
+Feb 12 00:57:43 syslog-client webapp: SQL INJECTION from 203.0.113.45: payload='UNION SELECT * FROM users--'
+Feb 12 00:57:43 syslog-client webapp: SQL INJECTION from 203.0.113.45: payload='DROP TABLE users;--'
+Feb 12 00:57:43 syslog-client webapp: SQL INJECTION from 203.0.113.45: payload='' OR '1'='1'
+Feb 12 00:57:43 syslog-client webapp: SQL INJECTION from 203.0.113.45: payload='UNION SELECT * FROM users--'
+Feb 12 00:57:43 syslog-client webapp: SQL INJECTION from 203.0.113.45: payload=''; DELETE FROM logs;--'
+Feb 12 00:57:43 syslog-client webapp: SQL INJECTION from 203.0.113.45: payload=''; DELETE FROM logs;--'
+Feb 12 00:57:43 syslog-client webapp: SQL INJECTION from 203.0.113.45: payload='UNION SELECT * FROM users--'
+Feb 12 00:57:43 syslog-client httpd: 198.51.100.10 - - "GET /upload.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 00:57:43 syslog-client httpd: 198.51.100.10 - - "POST /api/users HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 00:57:43 syslog-client httpd: 198.51.100.10 - - "POST /admin.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 00:57:43 syslog-client httpd: 198.51.100.10 - - "GET /config.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 00:57:43 syslog-client httpd: 198.51.100.10 - - "POST /admin.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 00:57:43 syslog-client httpd: 198.51.100.10 - - "GET /admin.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 00:57:43 syslog-client httpd: 198.51.100.10 - - "POST /upload.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 00:57:43 syslog-client httpd: 198.51.100.10 - - "GET /admin.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 00:57:43 syslog-client httpd: 198.51.100.10 - - "POST /admin/login HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 00:57:43 syslog-client httpd: 198.51.100.10 - - "GET /admin.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 00:57:43 syslog-client httpd: 198.51.100.10 - - "GET /api/users HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 00:57:43 syslog-client httpd: 198.51.100.10 - - "POST /api/users HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 00:57:43 syslog-client httpd: 198.51.100.10 - - "POST /upload.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 00:57:43 syslog-client httpd: 198.51.100.10 - - "GET /admin.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 00:57:43 syslog-client httpd: 198.51.100.10 - - "POST /config.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 00:57:43 syslog-client httpd: 198.51.100.10 - - "POST /admin/login HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 00:57:43 syslog-client httpd: 198.51.100.10 - - "GET /api/users HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 00:57:43 syslog-client httpd: 198.51.100.10 - - "GET /upload.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 00:57:43 syslog-client httpd: 198.51.100.10 - - "POST /admin.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 00:57:43 syslog-client sudo: nginx : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
+Feb 12 00:57:43 syslog-client sudo: nginx : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
+Feb 12 00:57:43 syslog-client sudo: nginx : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
+Feb 12 00:57:43 syslog-client sudo: nginx : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
+Feb 12 00:57:43 syslog-client sudo: nginx : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
+Feb 12 00:57:44 syslog-client kernel: [PRIVESC] Buffer overflow from 10.0.0.5 via nginx
+Feb 12 00:57:44 syslog-client ClamAV: [MALWARE] /var/tmp/payload.exe: Trojan.Generic from 10.0.0.5
+Feb 12 00:57:44 syslog-client ClamAV: [MALWARE] /tmp/trojan: Rootkit.Generic from 10.0.0.5
+Feb 12 00:57:44 syslog-client ClamAV: [MALWARE] /tmp/trojan: Rootkit.Generic from 198.51.100.10
+Feb 12 00:57:44 syslog-client ClamAV: [MALWARE] /tmp/trojan: Trojan.Generic from 10.0.0.5
+Feb 12 00:57:44 syslog-client ClamAV: [MALWARE] /tmp/malware.sh: Backdoor.Linux from 10.0.0.5
+Feb 12 00:57:44 syslog-client ClamAV: [MALWARE] /.ssh/backdoor.py: Dropper from 203.0.113.45
+Feb 12 00:57:44 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 198.51.100.10 transferring 2796373 bytes
+Feb 12 00:57:44 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 198.51.100.10 transferring 6661497 bytes
+Feb 12 00:57:44 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 198.51.100.10 transferring 6324064 bytes
+Feb 12 00:57:44 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 198.51.100.10 transferring 2420322 bytes
+Feb 12 00:57:44 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 198.51.100.10 transferring 4114150 bytes
+Feb 12 00:57:44 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 198.51.100.10 transferring 1012780 bytes
+Feb 12 00:57:44 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 198.51.100.10 transferring 5144940 bytes
+Feb 12 00:57:44 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 198.51.100.10 transferring 1295531 bytes
+Feb 12 00:57:44 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 198.51.100.10 transferring 3999391 bytes
+Feb 12 00:57:44 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 198.51.100.10 transferring 9025030 bytes
+Feb 12 00:57:44 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 198.51.100.10 transferring 2934243 bytes
+Feb 12 00:57:44 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 198.51.100.10 transferring 3556323 bytes
+Feb 12 00:57:44 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 198.51.100.10 transferring 4385953 bytes
+Feb 12 01:21:50 syslog-client sshd[5668]: Failed password for admin from 172.16.0.50 port 22 ssh2
+Feb 12 01:21:50 syslog-client sshd[8139]: Failed password for nginx from 172.16.0.50 port 22 ssh2
+Feb 12 01:21:50 syslog-client sshd[2288]: Failed password for root from 172.16.0.50 port 22 ssh2
+Feb 12 01:21:50 syslog-client sshd[3311]: Failed password for test from 172.16.0.50 port 22 ssh2
+Feb 12 01:21:51 syslog-client sshd[2299]: Failed password for admin from 172.16.0.50 port 22 ssh2
+Feb 12 01:21:51 syslog-client sshd[3520]: Failed password for test from 172.16.0.50 port 22 ssh2
+Feb 12 01:21:51 syslog-client sshd[8100]: Failed password for root from 172.16.0.50 port 22 ssh2
+Feb 12 01:21:51 syslog-client sshd[1011]: Failed password for postgres from 172.16.0.50 port 22 ssh2
+Feb 12 01:21:51 syslog-client sshd[4498]: Failed password for user from 172.16.0.50 port 22 ssh2
+Feb 12 01:21:51 syslog-client sshd[1250]: Failed password for root from 172.16.0.50 port 22 ssh2
+Feb 12 01:21:51 syslog-client sshd[9656]: Failed password for postgres from 172.16.0.50 port 22 ssh2
+Feb 12 01:21:51 syslog-client sshd[8360]: Failed password for admin from 172.16.0.50 port 22 ssh2
+Feb 12 01:21:51 syslog-client sshd[1522]: Failed password for test from 172.16.0.50 port 22 ssh2
+Feb 12 01:21:51 syslog-client sshd[5151]: Failed password for user from 172.16.0.50 port 22 ssh2
+Feb 12 01:21:51 syslog-client sshd[7337]: Failed password for test from 172.16.0.50 port 22 ssh2
+Feb 12 01:21:51 syslog-client sshd[3455]: Failed password for apache from 172.16.0.50 port 22 ssh2
+Feb 12 01:21:51 syslog-client sshd[4170]: Failed password for postgres from 172.16.0.50 port 22 ssh2
+Feb 12 01:21:51 syslog-client sshd[4745]: Failed password for postgres from 172.16.0.50 port 22 ssh2
+Feb 12 01:21:51 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=3306
+Feb 12 01:21:51 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=3306
+Feb 12 01:21:51 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=22
+Feb 12 01:21:51 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=5432
+Feb 12 01:21:51 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=5432
+Feb 12 01:21:51 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=80
+Feb 12 01:21:51 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=80
+Feb 12 01:21:51 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=80
+Feb 12 01:21:51 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=443
+Feb 12 01:21:52 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=8080
+Feb 12 01:21:52 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=80
+Feb 12 01:21:52 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=8443
+Feb 12 01:21:52 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=5432
+Feb 12 01:21:52 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=8443
+Feb 12 01:21:52 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=8080
+Feb 12 01:21:52 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=443
+Feb 12 01:21:52 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=8443
+Feb 12 01:21:52 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=3306
+Feb 12 01:21:52 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=5432
+Feb 12 01:21:52 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=80
+Feb 12 01:21:52 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=80
+Feb 12 01:21:52 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=80
+Feb 12 01:21:52 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=5432
+Feb 12 01:21:52 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=443
+Feb 12 01:21:52 syslog-client kernel: [UFW BLOCK] IN=eth0 SRC=203.0.113.45 DST=192.168.1.1 PROTO=TCP DPT=5432
+Feb 12 01:21:52 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload='' OR '1'='1'
+Feb 12 01:21:52 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload='UNION SELECT * FROM users--'
+Feb 12 01:21:52 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload='DROP TABLE users;--'
+Feb 12 01:21:52 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload=''; DELETE FROM logs;--'
+Feb 12 01:21:52 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload='' OR '1'='1'
+Feb 12 01:21:52 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload=''; DELETE FROM logs;--'
+Feb 12 01:21:52 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload='DROP TABLE users;--'
+Feb 12 01:21:52 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload='UNION SELECT * FROM users--'
+Feb 12 01:21:52 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload=''; DELETE FROM logs;--'
+Feb 12 01:21:52 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload=''; DELETE FROM logs;--'
+Feb 12 01:21:52 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload='' OR '1'='1'
+Feb 12 01:21:52 syslog-client webapp: SQL INJECTION from 192.168.1.100: payload='UNION SELECT * FROM users--'
+Feb 12 01:21:52 syslog-client httpd: 10.0.0.5 - - "GET /config.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 01:21:52 syslog-client httpd: 10.0.0.5 - - "GET /api/users HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 01:21:52 syslog-client httpd: 10.0.0.5 - - "POST /config.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 01:21:52 syslog-client httpd: 10.0.0.5 - - "POST /upload.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 01:21:52 syslog-client httpd: 10.0.0.5 - - "POST /admin.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 01:21:52 syslog-client httpd: 10.0.0.5 - - "POST /admin.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 01:21:52 syslog-client httpd: 10.0.0.5 - - "POST /admin/login HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 01:21:52 syslog-client httpd: 10.0.0.5 - - "POST /admin/login HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 01:21:53 syslog-client httpd: 10.0.0.5 - - "POST /admin.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 01:21:53 syslog-client httpd: 10.0.0.5 - - "GET /upload.php HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 01:21:53 syslog-client httpd: 10.0.0.5 - - "GET /api/users HTTP/1.1" 404 - "-" "Mozilla/5.0"
+Feb 12 01:21:53 syslog-client httpd: 10.0.0.5 - - "POST /config.php HTTP/1.1" 403 - "-" "Mozilla/5.0"
+Feb 12 01:21:53 syslog-client httpd: 10.0.0.5 - - "GET /admin.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 01:21:53 syslog-client httpd: 10.0.0.5 - - "POST /config.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 01:21:53 syslog-client httpd: 10.0.0.5 - - "POST /admin.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 01:21:53 syslog-client httpd: 10.0.0.5 - - "POST /admin.php HTTP/1.1" 401 - "-" "Mozilla/5.0"
+Feb 12 01:21:53 syslog-client sudo: root : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
+Feb 12 01:21:53 syslog-client sudo: root : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
+Feb 12 01:21:53 syslog-client sudo: root : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
+Feb 12 01:21:53 syslog-client sudo: root : TTY=pts/0 ; USER=root ; COMMAND=/bin/bash
+Feb 12 01:21:53 syslog-client kernel: [PRIVESC] Buffer overflow from 172.16.0.50 via root
+Feb 12 01:21:53 syslog-client ClamAV: [MALWARE] /tmp/malware.sh: Backdoor.Linux from 192.168.1.100
+Feb 12 01:21:53 syslog-client ClamAV: [MALWARE] /tmp/malware.sh: Dropper from 172.16.0.50
+Feb 12 01:21:53 syslog-client ClamAV: [MALWARE] /.ssh/backdoor.py: Dropper from 192.168.1.100
+Feb 12 01:21:53 syslog-client ClamAV: [MALWARE] /var/tmp/payload.exe: Backdoor.Linux from 203.0.113.45
+Feb 12 01:21:53 syslog-client ClamAV: [MALWARE] /.ssh/backdoor.py: Dropper from 10.0.0.5
+Feb 12 01:21:53 syslog-client ClamAV: [MALWARE] /.ssh/backdoor.py: Rootkit.Generic from 198.51.100.10
+Feb 12 01:21:53 syslog-client ClamAV: [MALWARE] /tmp/malware.sh: Dropper from 198.51.100.10
+Feb 12 01:21:53 syslog-client ClamAV: [MALWARE] /tmp/trojan: Trojan.Generic from 198.51.100.10
+Feb 12 01:21:53 syslog-client ClamAV: [MALWARE] /tmp/malware.sh: Dropper from 172.16.0.50
+Feb 12 01:21:53 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 10.0.0.5 transferring 1057039 bytes
+Feb 12 01:21:53 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 10.0.0.5 transferring 6561605 bytes
+Feb 12 01:21:53 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 10.0.0.5 transferring 8428128 bytes
+Feb 12 01:21:53 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 10.0.0.5 transferring 2129451 bytes
+Feb 12 01:21:53 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 10.0.0.5 transferring 9304119 bytes
+Feb 12 01:21:53 syslog-client ET MALWARE: Outbound SSH from 192.168.1.50 to 10.0.0.5 transferring 3034122 bytes
+Feb 12 01:21:53 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 10.0.0.5 transferring 2296328 bytes
+Feb 12 01:21:54 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 10.0.0.5 transferring 8285165 bytes
+Feb 12 01:21:54 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 10.0.0.5 transferring 8408639 bytes
+Feb 12 01:21:54 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 10.0.0.5 transferring 4701776 bytes
+Feb 12 01:21:54 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 10.0.0.5 transferring 5886413 bytes
+Feb 12 01:21:54 syslog-client ET MALWARE: Outbound FTP from 192.168.1.50 to 10.0.0.5 transferring 1994380 bytes
+Feb 12 01:21:54 syslog-client ET MALWARE: Outbound HTTPS from 192.168.1.50 to 10.0.0.5 transferring 6160248 bytes
