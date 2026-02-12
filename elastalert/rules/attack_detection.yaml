@@ -35,8 +35,7 @@ filter:
 
 
 # Alertar cuando se detecten múltiples eventos
-alert: webhook
-
+alert:
+    - "alert_webhook.WebhookAlerter"
 # Configurar webhook para Shuffle
-webhook:
-  url: "http://localhost:3001/api/v1/hooks/webhook_c34f9855-43bc-44e4-adaf-591cd6bd73f0"
+webhook_url: "http://localhost:3001/api/v1/hooks/webhook_c34f9855-43bc-44e4-adaf-591cd6bd73f0"

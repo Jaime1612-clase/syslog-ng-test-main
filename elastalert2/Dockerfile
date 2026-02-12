@@ -20,15 +20,9 @@ RUN apt-get update && \
 RUN pip install --upgrade pip setuptools wheel
 
 RUN git clone https://github.com/jertel/elastalert2.git /opt/elastalert2 \
-    && pip install --upgrade pip setuptools wheel \
     && pip install requests \
-    && pip install 'elastalert2[webhook]==2.6.0' \
-    && echo '--- ALERT MODULES ---' \
-    && python -c "import pkgutil; import elastalert_modules; print([name for _, name, _ in pkgutil.iter_modules(elastalert_modules.__path__)])" || true
+    && pip install 'elastalert2[webhook]==2.6.0'
 
 WORKDIR /opt/elastalert2
-
-# Copiar módulos personalizados
 COPY elastalert_modules /opt/elastalert2/elastalert_modules
-
 CMD ["elastalert", "--config", "/opt/elastalert2/config/config.yaml"]
