@@ -3,10 +3,10 @@ from datetime import datetime
 
 # Configuración
 thehive_url = "http://localhost:9000/api/alert"
-api_key = "dIVmJS4fK9m7QxJdygdf6RpVhH2hxRa5"  # Tu API key real
+api_key = "68wSRNnhHOZ99aqIvdgZhNJU7OHXIzn6"  # Tu API key real
 
 headers = {
-    "Authorization": api_key,  # sin "Bearer"
+    "Authorization": f"Bearer {api_key}",
     "Content-Type": "application/json"
 }
 

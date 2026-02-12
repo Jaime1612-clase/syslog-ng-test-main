@@ -16,7 +16,7 @@ from collections import defaultdict
 # Configuración
 ES_URL = "http://localhost:9200"
 THEHIVE_URL = "http://localhost:9000/api/alert"
-API_KEY = "hZo3qYekLTwks35KUJAHkfsw9CL6GPW0"
+API_KEY = "68wSRNnhHOZ99aqIvdgZhNJU7OHXIzn6"
 # TheHive uses simple Authorization header (no Bearer prefix for some versions)
 HEADERS = {"Authorization": API_KEY, "Content-Type": "application/json"}
 
@@ -175,7 +175,7 @@ def detect_sql_injection():
                     {"range": {"@timestamp": {"gte": "now-10m"}}}
                 ]
             }
-        },500
+        }
     }
     
     result = query_elasticsearch(query)
@@ -188,7 +188,6 @@ def detect_sql_injection():
         unique_ips = list(set(ips))
         artifacts = [{"dataType": "ip", "data": ip} for ip in unique_ips[:5]]
         create_thehive_alert(
-            title=f"SQL Injection - {len(hits)} intentos desde {len(unique_ips
             title=f"SQL Injection - {len(hits)} intentos desde {len(set(ips))} IPs",
             description=f"Detectados {len(hits)} intentos de inyección SQL en los últimos 10 minutos.",
             severity=3,
@@ -208,7 +207,7 @@ def detect_malware():
                     {"range": {"@timestamp": {"gte": "now-10m"}}}
                 ]
             }
-        },500
+        }
     }
     
     result = query_elasticsearch(query)
@@ -219,8 +218,7 @@ def detect_malware():
     if len(hits) > 0 and can_create_alert("malware"):
         ips = extract_ips_from_events(hits, r'from ([0-9\.]+)')
         unique_ips = list(set(ips))
-        artifacts = [{"dataType": "ip", "data": ip} for ip in unique_ips
-        artifacts = [{"dataType": "ip", "data": ip} for ip in list(set(ips))[:5]]
+        artifacts = [{"dataType": "ip", "data": ip} for ip in unique_ips[:5]]
         create_thehive_alert(
             title=f"Malware Detection - {len(hits)} eventos",
             description=f"Se han detectado {len(hits)} eventos de malware en los últimos 10 minutos.",
@@ -241,7 +239,7 @@ def detect_web_attacks():
                     {"range": {"@timestamp": {"gte": "now-10m"}}}
                 ]
             }
-        },500
+        }
     }
     
     result = query_elasticsearch(query)
@@ -254,7 +252,6 @@ def detect_web_attacks():
         unique_ips = list(set(ips))
         artifacts = [{"dataType": "ip", "data": ip} for ip in unique_ips[:5]]
         create_thehive_alert(
-            title=f"Web Attacks - {len(hits)} solicitudes sospechosas desde {len(unique_ips
             title=f"Web Attacks - {len(hits)} solicitudes sospechosas desde {len(set(ips))} IPs",
             description=f"Se han detectado {len(hits)} solicitudes HTTP sospechosas (403, 401, 404) en los últimos 10 minutos.",
             severity=2,
@@ -273,8 +270,8 @@ def detect_data_exfiltration():
                 "filter": [
                     {"range": {"@timestamp": {"gte": "now-10m"}}}
                 ]
-            }500
-    }
+            }
+        }
     
     result = query_elasticsearch(query)
     if not result:
